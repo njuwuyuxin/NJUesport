@@ -1,7 +1,5 @@
 <template>
-  <div class="slide-img">
-    <img src="https://image-1253276483.cos.ap-shanghai.myqcloud.com/image/banner/banner1.jpg">
-  </div>
+  <img class="slide-img" src="https://image-1253276483.cos.ap-shanghai.myqcloud.com/image/banner/banner1.jpg">
 </template>
 
 <script>
@@ -20,5 +18,9 @@ export default {
 *{
   margin: 0;
   padding: 0;
+}
+.slide-img{
+  width: 100%;
+  height: auto;
 }
 </style>
