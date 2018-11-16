@@ -1,27 +1,28 @@
 <template>
-  <div class="index">
-    <top_nav></top_nav>
-    <slide_img></slide_img>
-    <div class="bodyframe">
-    	<div class="body">
-	    	<div class="Title1">最新活动</div>
-    		<div class="act">
-		    	<NewsCard v-for="news in activities" v-bind:NewsInfo=news></NewsCard>
-		    </div>
-		    <div class="Title2">精彩回顾</div>
-		    <div class="review">
-		    	<NewsCard v-for="news in reviews" v-bind:NewsInfo=news></NewsCard>
+  	<div class="index">
+	    <top_nav></top_nav>
+	    <slide_img></slide_img>
+	    <div class="bodyframe">
+	    	<div class="body">
+		    	<div class="Title1">最新活动</div>
+	    		<div class="act">
+			    	<NewsCard v-for="news in activities" v-bind:NewsInfo=news></NewsCard>
+			    </div>
+			    <div class="Title2">精彩回顾</div>
+			    <div class="review">
+			    	<NewsCard v-for="news in reviews" v-bind:NewsInfo=news></NewsCard>
+			    </div>
 		    </div>
 	    </div>
-    </div>
-
-  </div>
+	    <BottomNav></BottomNav>
+  	</div>
 </template>
 
 <script>
 import top_nav from'./Nav'
 import slide_img from'./SlideImg'
 import NewsCard from'./Newscard'
+import BottomNav from'./BottomNav'
 export default {
   name: 'Index',
   data () {
@@ -107,6 +108,7 @@ export default {
   	top_nav,
     slide_img,
     NewsCard,
+    BottomNav,
   }
 }
 </script>
@@ -144,7 +146,7 @@ export default {
 	width: 1252px;
 	height: auto;
 }
-.act:after{
+.act:after,.review:after{
 	content: "020"; 
 	display: block; 
 	height: 0; 
