@@ -69,3 +69,13 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
           //其中content为一个数组，可以有一个或多个元素，每一个元素为一个段落，若不需分段可以直接存放一个元素
 }
 ```
+### 更新首页滚动图
+./components/utils/SlideImg.vue
+
+//在mounted()函数中的that.someList数组中，添加，修改，或删除如下结构体（注意顺序影响显示顺序）
+{
+        html: '<a href="https://steamcn.com/t429743-1-1" target="_blank"><img src="https://image-1253276483.cos.ap-shanghai.myqcloud.com/image/banner/banner1.jpg"></a>',
+        style: {
+
+        }
+}, //其中html为html元素，按照v-html解析，可直接按一般html格式书写。style为样式，可按一般css格式书写
