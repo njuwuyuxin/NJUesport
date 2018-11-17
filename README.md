@@ -74,7 +74,7 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 ```
 //在mounted()函数中的that.someList数组中，添加，修改，或删除如下结构体（注意顺序影响显示顺序）
 {
-        html: '<a href="https://steamcn.com/t429743-1-1" target="_blank"><img src="https://image-1253276483.cos.ap-shanghai.myqcloud.com/image/banner/banner1.jpg"></a>',
+        html: '<a href="xxxx"><img src="xxxxxxx"></a>',
         style: {
 
         }
