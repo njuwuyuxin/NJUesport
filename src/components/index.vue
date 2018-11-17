@@ -1,6 +1,6 @@
 <template>
   	<div class="index">
-  	    <slide_img></slide_img>
+  	    <SlideImg></SlideImg>
   	    <div class="bodyframe">
     	    	<div class="body">
       		    	<div class="Title1">最新活动</div>
@@ -17,7 +17,7 @@
 </template>
 
 <script>
-import slide_img from'./utils/SlideImg'
+import SlideImg from'./utils/SlideImg'
 import NewsCard from'./utils/Newscard'
 export default {
   name: 'Index',
@@ -101,7 +101,7 @@ export default {
     }
   },
   components:{
-    slide_img,
+    SlideImg,
     NewsCard,
   }
 }
