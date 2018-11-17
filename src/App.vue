@@ -24,6 +24,10 @@ export default {
   margin: 0;
   padding: 0;
 }
+a{
+  text-decoration: none;
+  color:inherit;
+}
 html, body { font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;}
 #app {
 }

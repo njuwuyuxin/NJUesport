@@ -1,18 +1,18 @@
 <template>
   	<div class="index">
-	    <slide_img></slide_img>
-	    <div class="bodyframe">
-	    	<div class="body">
-		    	<div class="Title1">最新活动</div>
-	    		<div class="act">
-			    	<NewsCard v-for="news in activities" v-bind:NewsInfo=news></NewsCard>
-			    </div>
-			    <div class="Title2">精彩回顾</div>
-			    <div class="review">
-			    	<NewsCard v-for="news in reviews" v-bind:NewsInfo=news></NewsCard>
-			    </div>
-		    </div>
-	    </div>
+  	    <slide_img></slide_img>
+  	    <div class="bodyframe">
+    	    	<div class="body">
+      		    	<div class="Title1">最新活动</div>
+        	    		<div class="act">
+        			    	  <NewsCard v-for="news in activities" v-bind:NewsInfo=news></NewsCard>
+        			    </div>
+        			    <div class="Title2">精彩回顾</div>
+        			    <div class="review">
+        			    	  <NewsCard v-for="news in reviews" v-bind:NewsInfo=news></NewsCard>
+        			    </div>
+      		    </div>
+  	    </div>
   	</div>
 </template>
 

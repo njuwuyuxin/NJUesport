@@ -1,5 +1,6 @@
 <template>
   	<div class="department">
+  		<SideNav></SideNav>
   		<div class="body">
   			<h1 id="summary">南大电竞社概况</h1>
 		    <p>“世界上一切让不可能变为可能的，都是因为热爱。”仍然记得 2005 年，当 sky 终于成为人皇的时候，内心涌动着的那种澎湃的激情。那指尖跳跃在 104 键上的轻灵令人沉醉，那团队协作的温暖和胜利时的喜悦也让人难以忘怀。电竞不是玩物丧志，这个已经被国家体育总局列入正式体育竞技项目和教育局列入正式专业的活动，这如同宿命一般的热爱，将推动着我们不断向前，热爱生活，追逐远方。电子竞技其实更多地像篮球、足球一样，是一种爱好，是一种能培养团队精神和锻炼反应能力的项目。</p>
@@ -41,12 +42,16 @@
 </template>
 
 <script>
+import SideNav from './utils/SideNav'
 export default {
   name: 'Department',
   data () {
     return {
       
     }
+  },
+  components:{
+  	SideNav,
   }
 }
 </script>

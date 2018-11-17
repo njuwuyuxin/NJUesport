@@ -1,7 +1,7 @@
 <template>
   <div class="nav">
   	<div class="nav-box">
-  		<div class="logo_img"><img src="https://image-1253276483.cos.ap-shanghai.myqcloud.com/image/logo.png"></div>
+  		<div class="logo_img"><router-link class="router_css" to="/"><img src="https://image-1253276483.cos.ap-shanghai.myqcloud.com/image/logo.png"></router-link></div>
 	  	<div class="nav_items">
 	  		<ul>		
 	  			<li><router-link class="router_css" to="/">首页</router-link></li>
