@@ -70,8 +70,8 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 }
 ```
 ### 更新首页滚动图
-./components/utils/SlideImg.vue
 ```
+./components/utils/SlideImg.vue
 //在mounted()函数中的that.someList数组中，添加，修改，或删除如下结构体（注意顺序影响显示顺序）
 {
         html: '<a href="xxxx"><img src="xxxxxxx"></a>',
