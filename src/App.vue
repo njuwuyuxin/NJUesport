@@ -1,20 +1,20 @@
 <template>
   <div id="app">
-    <top_nav></top_nav>
-    <slide_img></slide_img>
-    
+    <Nav></Nav>
+    <router-view></router-view>
+    <BottomNav></BottomNav>
   </div>
 </template>
 
 <script>
-// import top-nav from './components/HelloWorld'
-import top_nav from'./components/Nav'
-import slide_img from'./components/SlideImg'
+import Index from'./components/index'
+import Nav from'./components/utils/Nav'
+import BottomNav from'./components/utils/BottomNav'
 export default {
   name: 'App',
   components: {
-    top_nav,
-    slide_img
+    Nav,
+    BottomNav
   }
 }
 </script>
@@ -24,6 +24,11 @@ export default {
   margin: 0;
   padding: 0;
 }
+a{
+  text-decoration: none;
+  color:inherit;
+}
+html, body { font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;}
 #app {
 }
 </style>
