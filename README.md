@@ -83,7 +83,7 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 //其中html为html元素，按照v-html解析，可直接按一般html格式书写。style为样式，可按一般css格式书写
 ```
 ### 注意
-####由于在滚动图组件为加载完时，会临时加载滚动图中的第一张进行“预载”，因此若要修改滚动图中第一张，需同时修改以下位置：
+#### 由于在滚动图组件为加载完时，会临时加载滚动图中的第一张进行“预载”，因此若要修改滚动图中第一张，需同时修改以下位置：
 ```
 ./components/utils/SlideImg.vue
 
