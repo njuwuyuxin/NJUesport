@@ -59,14 +59,14 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 
 //在activities数组中，添加，修改，或删除如下结构体（注意顺序影响显示顺序）
 {
-	    	coverPic:"xxxxx",
-	    	title:"xxxxx",
-	    	content:[
-		    	"xxxx",
-		    	"xxxx",
-		    	"xxxx",
-		    	]
-          //其中content为一个数组，可以有一个或多个元素，每一个元素为一个段落，若不需分段可以直接存放一个元素
+        coverPic:"xxxxx",
+        title:"xxxxx",
+        content:[
+            "xxxx",
+            "xxxx",
+            "xxxx",
+        ]
+        //其中content为一个数组，可以有一个或多个元素，每一个元素为一个段落，若不需分段可以直接存放一个元素
 }
 ```
 ### 更新首页滚动图
@@ -79,10 +79,12 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
         style: {
 
         }
-}, //其中html为html元素，按照v-html解析，可直接按一般html格式书写。style为样式，可按一般css格式书写
-
-//注意：由于在滚动图组件为加载完时，会临时加载滚动图中的第一张进行“预载”，因此若要修改滚动图中第一张，需同时修改以下位置：
-
+}, 
+//其中html为html元素，按照v-html解析，可直接按一般html格式书写。style为样式，可按一般css格式书写
+```
+### 注意
+####由于在滚动图组件为加载完时，会临时加载滚动图中的第一张进行“预载”，因此若要修改滚动图中第一张，需同时修改以下位置：
+```
 ./components/utils/SlideImg.vue
 
 template模板中
