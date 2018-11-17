@@ -1,16 +1,20 @@
 <template>
   <div id="app">
-    <Index></Index>  
+    <Nav></Nav>
+    <router-view></router-view>
+    <BottomNav></BottomNav>
   </div>
 </template>
 
 <script>
 import Index from'./components/index'
-
+import Nav from'./components/Nav'
+import BottomNav from'./components/BottomNav'
 export default {
   name: 'App',
   components: {
-    Index
+    Nav,
+    BottomNav
   }
 }
 </script>

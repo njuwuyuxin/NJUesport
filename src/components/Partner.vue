@@ -1,12 +1,12 @@
 <template>
-  <div class="top-nav">
+  <div class="partner">
     
   </div>
 </template>
 
 <script>
 export default {
-  name: 'top-nav',
+  name: 'Partner',
   data () {
     return {
       

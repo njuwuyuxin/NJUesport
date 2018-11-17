@@ -47,17 +47,13 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-*{
-  margin: 0;
-  padding: 0;
-}
 .moreInfo > a{
 	text-decoration: none;
 	color: inherit;
 }
 .body{
 	width:291px;
-	height: 349px;
+	height: 343px;
 	border: 1px solid lightgray;
 	border-radius: 5px;
 	float:left;

@@ -1,6 +1,5 @@
 <template>
   	<div class="index">
-	    <top_nav></top_nav>
 	    <slide_img></slide_img>
 	    <div class="bodyframe">
 	    	<div class="body">
@@ -14,7 +13,6 @@
 			    </div>
 		    </div>
 	    </div>
-	    <BottomNav></BottomNav>
   	</div>
 </template>
 
@@ -22,7 +20,6 @@
 import top_nav from'./Nav'
 import slide_img from'./SlideImg'
 import NewsCard from'./Newscard'
-import BottomNav from'./BottomNav'
 export default {
   name: 'Index',
   data () {
@@ -105,20 +102,14 @@ export default {
     }
   },
   components:{
-  	top_nav,
     slide_img,
     NewsCard,
-    BottomNav,
   }
 }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-*{
-  margin: 0;
-  padding: 0;
-}
 .Title1{
 	height: 100px;
 	font-size: 32px;

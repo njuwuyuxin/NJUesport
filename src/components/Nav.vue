@@ -1,14 +1,14 @@
 <template>
   <div class="nav">
   	<div class="nav-box">
-  		<div class="logo_img"><img src="../assets/images/logo.png"></div>
+  		<div class="logo_img"><img src="https://image-1253276483.cos.ap-shanghai.myqcloud.com/image/logo.png"></div>
 	  	<div class="nav_items">
 	  		<ul>		
-	  			<li>首页</li>
-	  			<li>部门介绍</li>
-	  			<li>社团活动</li>
-	  			<li>合作伙伴</li>
-	  			<li>联系我们</li>
+	  			<li><router-link class="router_css" to="/">首页</router-link></li>
+	  			<li><router-link class="router_css" to="/Department">部门介绍</router-link></li>
+	  			<li><router-link class="router_css" to="/Activities">社团活动</router-link></li>
+	  			<li><router-link class="router_css" to="/Partner">合作伙伴</router-link></li>
+	  			<li><router-link class="router_css" to="/Contact">联系我们</router-link></li>
 	  		</ul>
   		</div>
   	</div>
@@ -18,7 +18,7 @@
 
 <script>
 export default {
-  name: 'top_nav',
+  name: 'Nav',
   data () {
     return {
       
@@ -29,12 +29,12 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-*{
-  margin: 0;
-  padding: 0;
-}
 ul{
 	list-style: none;
+}
+.router_css{
+	text-decoration: none;
+	color: inherit;
 }
 li{
 	float:left;
