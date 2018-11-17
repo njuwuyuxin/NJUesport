@@ -8,8 +8,8 @@
 
 <script>
 import Index from'./components/index'
-import Nav from'./components/Nav'
-import BottomNav from'./components/BottomNav'
+import Nav from'./components/utils/Nav'
+import BottomNav from'./components/utils/BottomNav'
 export default {
   name: 'App',
   components: {
@@ -24,6 +24,7 @@ export default {
   margin: 0;
   padding: 0;
 }
+html, body { font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;}
 #app {
 }
 </style>

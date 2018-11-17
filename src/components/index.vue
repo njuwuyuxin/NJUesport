@@ -17,9 +17,8 @@
 </template>
 
 <script>
-import top_nav from'./Nav'
-import slide_img from'./SlideImg'
-import NewsCard from'./Newscard'
+import slide_img from'./utils/SlideImg'
+import NewsCard from'./utils/Newscard'
 export default {
   name: 'Index',
   data () {
