@@ -7,7 +7,7 @@
           <slideritem v-for="(item,index) in someList" :key="index" :style="item.style" v-html="item.html"></slideritem>
           <!-- 设置loading,可自定义 -->
           <!-- <div slot="loading">loading...</div> -->
-          <div slot="loading"><img src="https://image-1253276483.cos.ap-shanghai.myqcloud.com/image/banner/banner1.jpg"></div>
+          <div slot="loading"><a href="https://steamcn.com/t429743-1-1" target="_blank"><img src="https://image-1253276483.cos.ap-shanghai.myqcloud.com/image/banner/banner1.jpg"></a></div>
       </slider>
 </div>
 </template>
@@ -46,34 +46,46 @@ export default {
       setTimeout(function () {
         that.someList = [
           {
-            html: '<a href="https://steamcn.com/t429743-1-1" target="_blank"><img src="https://image-1253276483.cos.ap-shanghai.myqcloud.com/image/banner/banner1.jpg"></a>',
+            html: '',
             style: {
-
-            }
+            	'background':'url(https://image-1253276483.cos.ap-shanghai.myqcloud.com/image/banner/banner1.jpg)'
+            },
+            href:"https://steamcn.com/t429743-1-1"
           },
           {
-            html: '<a href="https://steamcn.com/t429743-1-1" target="_blank"><img src="https://image-1253276483.cos.ap-shanghai.myqcloud.com/image/banner/banner2.jpg"></a>',
+            html: '',
             style: {
-              
-            }
+            	'background':'url(https://image-1253276483.cos.ap-shanghai.myqcloud.com/image/banner/banner6.jpg)'
+            },
+            href:"https://mp.weixin.qq.com/s/_ARdMvYzXtIQJLOtJJdR2Q"
           },
           {
-            html: '<a href="https://steamcn.com/t429743-1-1" target="_blank"><img src="https://image-1253276483.cos.ap-shanghai.myqcloud.com/image/banner/banner3.jpg"></a>',
+            html: '',
             style: {
-              
-            }
+            	'background':'url(https://image-1253276483.cos.ap-shanghai.myqcloud.com/image/banner/banner2.jpg)'
+            },
+            href:"https://mp.weixin.qq.com/s/IxfZS0eXrAbSegLDc-294g"
           },
           {
-            html: '<a href="https://steamcn.com/t429743-1-1" target="_blank"><img src="https://image-1253276483.cos.ap-shanghai.myqcloud.com/image/banner/banner4.jpg"></a>',
+            html: '',
             style: {
-              
-            }
+            	'background':'url(https://image-1253276483.cos.ap-shanghai.myqcloud.com/image/banner/banner3.jpg)'
+            },
+            href:"https://steamcn.com/t389636-1-1"
           },
           {
-            html: '<a href="https://steamcn.com/t429743-1-1" target="_blank"><img src="https://image-1253276483.cos.ap-shanghai.myqcloud.com/image/banner/banner5.jpg"></a>',
+            html: '',
             style: {
-              
-            }
+            	'background':'url(https://image-1253276483.cos.ap-shanghai.myqcloud.com/image/banner/banner4.jpg)'
+            },
+            href:"https://steamcn.com/t380261-1-1"
+          },
+          {
+            html: '',
+            style: {
+            	'background':'url(https://image-1253276483.cos.ap-shanghai.myqcloud.com/image/banner/banner5.jpg)'
+            },
+            href:"https://mp.weixin.qq.com/s/tB8iw7wb0HqM5ndoLYjyLQ"
           }
         ]
       }, 2000)
@@ -84,7 +96,8 @@ export default {
         //console.log(data)
       },
       onTap (data) {
-        console.log(data)
+        //console.log(data);
+        window.open(this.someList[data.currentPage].href);
       },
       onInit (data) {
         //console.log(data)
