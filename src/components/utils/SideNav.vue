@@ -42,9 +42,10 @@ a{
     border: 1px solid lightgray;
     border-radius: 8px;
     position: fixed;
+    z-index: 999;
     left:5%;
     top:16%;
-    box-shadow: darkgrey 5px 5px 30px 2px;
+    box-shadow: darkgrey 2px 2px 5px 2px;
 }
 .side_item{
     width: 160px;

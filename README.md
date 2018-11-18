@@ -75,12 +75,15 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 
 //在mounted()函数中的that.someList数组中，添加，修改，或删除如下结构体（注意顺序影响显示顺序）
 {
-        html: '<a href="xxxx"><img src="xxxxxxx"></a>',
+        html: '',
         style: {
-
-        }
+		'background':'url(xxxxxxxx)'
+        },
+	href:'xxxxxxxx'
 }, 
-//其中html为html元素，按照v-html解析，可直接按一般html格式书写。style为样式，可按一般css格式书写
+//其中html为html元素，按照v-html解析，可直接按一般html格式书写,无需要一般为空。
+//style为样式，可按一般css格式书写，一般用来设置背景图片url。
+//href为点击图片跳转地址
 ```
 ### 注意
 #### 由于在滚动图组件未加载完时，会临时加载滚动图中的第一张进行“预载”，因此若要修改滚动图组件中第一张图片，需同时修改以下位置：
@@ -88,5 +91,5 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 ./components/utils/SlideImg.vue
 
 template模板中
-<div slot="loading"><img src="预载的第一张图片url"></div>
+<div slot="loading"><a href="图片跳转地址" target="_blank">img src="预载的第一张图片url"></a></div>
 ```
