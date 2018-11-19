@@ -29,11 +29,15 @@ export default {
         _this.$axios
           .get(
             //"api/activities.php?index="+_this.showIndex,   //dev
+            //"http://118.89.104.33/activities.php?index="+_this.showIndex,	//build
             "/activities.php?index="+_this.showIndex,	//build
           )
           .then(function(response) {
+          	console.log("response:");
+          	console.log(response);
             var data=response.data;
-            //console.log(data.length);
+            console.log("data:");
+            console.log(data);
             if(data.length<10)
             	_this.showAll=true;
             for(var i=0;i<data.length;i++)
