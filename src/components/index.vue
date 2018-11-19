@@ -112,7 +112,7 @@ export default {
       	date:"2017年12月17日",
       	class:"展台活动",
       	coverPic:"https://image-1253276483.cos.ap-shanghai.myqcloud.com/image/card/card1.jpg",
-      	href:"https://mp.weixin.qq.com/s/qH0So5BDfXkuYBY1Bw-9MQ",
+      	href:"https://mp.weixin.qq.com/s/pp2WGeLEESrol9Xt_RMV1w",
         id:"7"
       },
       ],
