@@ -516,27 +516,46 @@ export default {
   },
   methods:{
   	LoadMore:function(){
-  		if(this.showAll==false)
-  		{
-  			if(this.showIndex<this.activities.length-10)
-	  		{
-	  			for(var i=0;i<10;i++)
-	  				this.activitiesOnShow.push(this.activities[this.showIndex+i]);
-	  			this.showIndex+=10;
-	  		}
-	  		else
-	  		{
-	  			for(var i=0;i<this.activities.length-this.showIndex;i++)
-	  				this.activitiesOnShow.push(this.activities[this.showIndex+i]);
-	  			this.showIndex=this.activities.length-1;
-	  			this.showAll=true;
-	  		}
-	  	}
+  		// if(this.showAll==false)
+  		// {
+  		// 	if(this.showIndex<this.activities.length-10)
+	  	// 	{
+	  	// 		for(var i=0;i<10;i++)
+	  	// 			this.activitiesOnShow.push(this.activities[this.showIndex+i]);
+	  	// 		this.showIndex+=10;
+	  	// 	}
+	  	// 	else
+	  	// 	{
+	  	// 		for(var i=0;i<this.activities.length-this.showIndex;i++)
+	  	// 			this.activitiesOnShow.push(this.activities[this.showIndex+i]);
+	  	// 		this.showIndex=this.activities.length-1;
+	  	// 		this.showAll=true;
+	  	// 	}
+	  	// }
+	  	(function(_this){
+        _this.$axios
+          .get(
+            "api/activities.php?index="+_this.showIndex,  
+          )
+          .then(function(response) {
+            var data=response.data;
+            //console.log(data.length);
+            if(data.length<10)
+            	_this.showAll=true;
+            for(var i=0;i<data.length;i++)
+            	_this.activitiesOnShow.push(data[i]);
+            _this.showIndex+=data.length;
+          })
+          .catch(function(error) {
+            console.log(error);
+          });
+    	})(this);
   	}
   },
   mounted(){
-  	for(;this.showIndex<10;this.showIndex++)
-  		this.activitiesOnShow.push(this.activities[this.showIndex]);
+  	// for(;this.showIndex<10;this.showIndex++)
+  	// 	this.activitiesOnShow.push(this.activities[this.showIndex]);
+  	this.LoadMore(this);
   }
 }
 </script>

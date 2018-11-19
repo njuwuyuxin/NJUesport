@@ -114,28 +114,6 @@ export default {
     SlideImg,
     NewsCard,
   },
-  mounted(){
-    console.log("in Function:mounted");
-    (function(_this){
-        _this.$axios
-          .post(
-            // "https://www.easy-mock.com/mock/5beace67e551c21d755b9693/simplenews"
-            "api/test.php",
-            {
-              userName:'vincent',
-              password:'123456',
-            }
-          )
-          .then(function(response) {
-            console.log(response);
-            console.log(response.data);
-          })
-          .catch(function(error) {
-            console.log(error);
-          });
-    })(this)
-
-  }
 }
 </script>
 

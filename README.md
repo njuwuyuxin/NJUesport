@@ -43,9 +43,12 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 ```
 ### 更新活动页面新闻
 ```
-./components/Activities.vue
+//由于活动内容较多，为提升速度，将数据存放在服务器，页面加载时动态请求
+//因此数据存放在JSON文件中
 
-//在activities数组中，添加，修改，或删除如下结构体（注意顺序影响显示顺序）
+./data/activities.json
+
+//在json文件中的data元素数组中，添加，修改，或删除如下结构体（注意顺序影响显示顺序）
 {
       	title:"游戏沙龙第二期",
       	date:"2018年10月13日",
@@ -59,7 +62,7 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 ```
 ./components/Partner.vue
 
-//在activities数组中，添加，修改，或删除如下结构体（注意顺序影响显示顺序）
+//在partnerList数组中，添加，修改，或删除如下结构体（注意顺序影响显示顺序）
 {
         coverPic:"xxxxx",
         title:"xxxxx",
