@@ -37,27 +37,32 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
       	date:"待定",
       	class:"游戏沙龙",
       	coverPic:"xxxx",  //封面图片url
-      	href:"xxxxx"    //跳转url
+      	href:"xxxxx",    //跳转url
+	id:"xxxx"    //该条新闻的唯一id，不可重复，内容没有限制，建议语义化标签
 }
 ```
 ### 更新活动页面新闻
 ```
-./components/Activities.vue
+//由于活动内容较多，为提升速度，将数据存放在服务器，页面加载时动态请求
+//因此数据存放在JSON文件中
 
-//在activities数组中，添加，修改，或删除如下结构体（注意顺序影响显示顺序）
+./data/activities.json
+
+//在json文件中的data元素数组中，添加，修改，或删除如下结构体（注意顺序影响显示顺序）
 {
       	title:"游戏沙龙第二期",
       	date:"2018年10月13日",
       	class:"游戏沙龙",
       	coverPic:"xxxx,
-      	href:"xxxxx"
+      	href:"xxxxx",
+	id:"xxxx"    //该条新闻的唯一id，不可重复，内容没有限制，建议语义化标签
 }
 ```
 ### 更新合作伙伴
 ```
 ./components/Partner.vue
 
-//在activities数组中，添加，修改，或删除如下结构体（注意顺序影响显示顺序）
+//在partnerList数组中，添加，修改，或删除如下结构体（注意顺序影响显示顺序）
 {
         coverPic:"xxxxx",
         title:"xxxxx",
@@ -65,8 +70,10 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
             "xxxx",
             "xxxx",
             "xxxx",
-        ]
-        //其中content为一个数组，可以有一个或多个元素，每一个元素为一个段落，若不需分段可以直接存放一个元素
+        ],
+	id:"xxxx"    //该条新闻的唯一id，不可重复，内容没有限制，建议语义化标签
+        
+	//其中content为一个数组，可以有一个或多个元素，每一个元素为一个段落，若不需分段可以直接存放一个元素
 }
 ```
 ### 更新首页滚动图
