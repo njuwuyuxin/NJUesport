@@ -48,9 +48,9 @@ export default {
           {
             html: '',
             style: {
-            	'background':'url(https://image-1253276483.cos.ap-shanghai.myqcloud.com/image/banner/banner1.jpg)'
+            	'background':'url(https://image-1253276483.cos.ap-shanghai.myqcloud.com/image/banner/banner7.jpg)'
             },
-            href:"https://steamcn.com/t429743-1-1"
+            href:"#"
           },
           {
             html: '',
@@ -58,6 +58,13 @@ export default {
             	'background':'url(https://image-1253276483.cos.ap-shanghai.myqcloud.com/image/banner/banner6.jpg)'
             },
             href:"https://mp.weixin.qq.com/s/_ARdMvYzXtIQJLOtJJdR2Q"
+          },
+          {
+            html: '',
+            style: {
+            	'background':'url(https://image-1253276483.cos.ap-shanghai.myqcloud.com/image/banner/banner1.jpg)'
+            },
+            href:"https://steamcn.com/t429743-1-1"
           },
           {
             html: '',
@@ -73,20 +80,6 @@ export default {
             },
             href:"https://steamcn.com/t389636-1-1"
           },
-          {
-            html: '',
-            style: {
-            	'background':'url(https://image-1253276483.cos.ap-shanghai.myqcloud.com/image/banner/banner4.jpg)'
-            },
-            href:"https://steamcn.com/t380261-1-1"
-          },
-          {
-            html: '',
-            style: {
-            	'background':'url(https://image-1253276483.cos.ap-shanghai.myqcloud.com/image/banner/banner5.jpg)'
-            },
-            href:"https://mp.weixin.qq.com/s/tB8iw7wb0HqM5ndoLYjyLQ"
-          }
         ]
       }, 2000)
     },
