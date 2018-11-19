@@ -9,6 +9,9 @@ import Department from'./components/Department'
 import Activities from'./components/Activities'
 import Partner from'./components/Partner'
 import Contact from'./components/Contact'
+import axios from "axios";
+
+Vue.prototype.$axios = axios;
 
 Vue.config.productionTip = false
 Vue.use(VueRouter)
