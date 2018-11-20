@@ -11,7 +11,8 @@
   },
   "dependencies": {
     "vue": "^2.5.2",
-    "vue-concise-slider": "^3.3.2"
+    "vue-concise-slider": "^3.3.2",
+    "vue-scroller": "^2.2.4"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",

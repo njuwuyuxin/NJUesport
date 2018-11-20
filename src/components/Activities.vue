@@ -29,7 +29,6 @@ export default {
         _this.$axios
           .get(
             //"api/activities.php?index="+_this.showIndex,   //dev
-            //"http://118.89.104.33/activities.php?index="+_this.showIndex,	//build
             "/activities.php?index="+_this.showIndex,	//build
           )
           .then(function(response) {
@@ -51,8 +50,6 @@ export default {
   	}
   },
   mounted(){
-  	// for(;this.showIndex<10;this.showIndex++)
-  	// 	this.activitiesOnShow.push(this.activities[this.showIndex]);
   	this.LoadMore(this);
   }
 }
