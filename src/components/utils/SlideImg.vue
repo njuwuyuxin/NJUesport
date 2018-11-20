@@ -7,7 +7,7 @@
           <slideritem v-for="(item,index) in someList" :key="index" :style="item.style" v-html="item.html"></slideritem>
           <!-- 设置loading,可自定义 -->
           <!-- <div slot="loading">loading...</div> -->
-          <div slot="loading"><a href="https://steamcn.com/t429743-1-1" target="_blank"><img src="https://image-1253276483.cos.ap-shanghai.myqcloud.com/image/banner/banner1.jpg"></a></div>
+          <div slot="loading"><img src="https://image-1253276483.cos.ap-shanghai.myqcloud.com/image/banner/banner_2018dongzhi.jpg"></div>
       </slider>
 </div>
 </template>
@@ -48,35 +48,35 @@ export default {
           {
             html: '',
             style: {
-            	'background':'url(https://image-1253276483.cos.ap-shanghai.myqcloud.com/image/banner/banner7.jpg)'
+            	'background':'url(https://image-1253276483.cos.ap-shanghai.myqcloud.com/image/banner/banner_2018dongzhi.jpg)'
             },
             href:"#"
           },
           {
             html: '',
             style: {
-            	'background':'url(https://image-1253276483.cos.ap-shanghai.myqcloud.com/image/banner/banner6.jpg)'
+            	'background':'url(https://image-1253276483.cos.ap-shanghai.myqcloud.com/image/banner/banner_2018xinshengbei.jpg)'
             },
             href:"https://mp.weixin.qq.com/s/_ARdMvYzXtIQJLOtJJdR2Q"
           },
           {
             html: '',
             style: {
-            	'background':'url(https://image-1253276483.cos.ap-shanghai.myqcloud.com/image/banner/banner1.jpg)'
+            	'background':'url(https://image-1253276483.cos.ap-shanghai.myqcloud.com/image/banner/banner_salon20181013.jpg)'
             },
             href:"https://steamcn.com/t429743-1-1"
           },
           {
             html: '',
             style: {
-            	'background':'url(https://image-1253276483.cos.ap-shanghai.myqcloud.com/image/banner/banner2.jpg)'
+            	'background':'url(https://image-1253276483.cos.ap-shanghai.myqcloud.com/image/banner/banner_2018pubg.jpg)'
             },
             href:"https://mp.weixin.qq.com/s/IxfZS0eXrAbSegLDc-294g"
           },
           {
             html: '',
             style: {
-            	'background':'url(https://image-1253276483.cos.ap-shanghai.myqcloud.com/image/banner/banner3.jpg)'
+            	'background':'url(https://image-1253276483.cos.ap-shanghai.myqcloud.com/image/banner/banner_salon20180527.jpg)'
             },
             href:"https://steamcn.com/t389636-1-1"
           },
@@ -90,7 +90,8 @@ export default {
       },
       onTap (data) {
         //console.log(data);
-        window.open(this.someList[data.currentPage].href);
+        if(this.someList[data.currentPage].href!='#')
+        	window.open(this.someList[data.currentPage].href);
       },
       onInit (data) {
         //console.log(data)
