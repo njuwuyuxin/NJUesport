@@ -1,10 +1,10 @@
 <template>
   <div class="nav">
   	<div class="top">
-		<router-link to="/"><img src="https://image-1253276483.cos.ap-shanghai.myqcloud.com/image/logo.png" class="logo"></router-link>
+		<router-link to="/index.html"><img src="https://image-1253276483.cos.ap-shanghai.myqcloud.com/image/logo.png" class="logo"></router-link>
 	</div>
     <ul class="nav-ul">
-		<li><router-link to="/">首页</router-link></li>
+		<li><router-link to="/index.html">首页</router-link></li>
 		<li><router-link to="/Department">部门介绍</router-link></li>
 		<li><router-link to="/Activities">社团活动</router-link></li>
 		<li><router-link to="/Partner">合作伙伴</router-link></li>

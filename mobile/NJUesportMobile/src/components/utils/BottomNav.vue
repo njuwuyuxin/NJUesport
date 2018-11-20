@@ -66,6 +66,7 @@ export default {
 	margin-bottom: 10px;
 }
 .BeiAn{
+	padding-top: 5px;
 	background-color:#390336;
 	height: 30px;
 	color:#7a5678;

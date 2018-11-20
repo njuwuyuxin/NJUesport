@@ -11,12 +11,12 @@ module.exports = {
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
     proxyTable: {
-        '/api':{
+        '/mobile/api':{
             // target:'http://118.89.104.33/',
             target:'https://njuesport.club/',
             changeOrigin:true,
             pathRewrite:{
-                '^/api':'/'
+                '^/mobile/api':'/'
             }
         }
     },

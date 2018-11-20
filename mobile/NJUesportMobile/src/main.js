@@ -15,9 +15,11 @@ Vue.prototype.$axios = axios;
 Vue.config.productionTip = false
 Vue.use(VueRouter)
 
+
 const router=new VueRouter({
+	base:"/mobile",
 	routes:[
-		{path:"/",component:Index},
+		{path:"/index.html",component:Index},
 		{path:"/Department",component:Department},
 		{path:"/Activities",component:Activities},
 		{path:"/Partner",component:Partner},

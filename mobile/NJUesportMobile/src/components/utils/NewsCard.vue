@@ -1,7 +1,7 @@
 <template>
   <div class="newsCard">
   	<div class="body">
-	  	<div class="imgBox"><img v-bind:src="NewsInfo.coverPic"></div>
+	  	<div class="imgBox"><a v-bind:href="NewsInfo.href"><img v-bind:src="NewsInfo.coverPic"></a></div>
 	  	<div class="title">{{NewsInfo.title}}</div>
 		<div class="date">{{NewsInfo.date}}</div>
 		<div class="tag">{{NewsInfo.class}}</div>
@@ -38,8 +38,8 @@ export default {
 	box-shadow: lightgrey 1px 1px 2px;
 }
 img{
-	width: inherit;
-	height: inherit;
+	width: 146px;
+	height: 121px;
 	border-radius: 5px 5px 0 0;
 }
 .imgBox{

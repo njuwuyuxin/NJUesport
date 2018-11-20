@@ -37,7 +37,7 @@ export default {
 	  	(function(_this){
         _this.$axios
           .get(
-            //"api/activities.php?index="+_this.showIndex,   //dev
+            // "api/activities.php?index="+_this.showIndex,   //dev
             "../activities.php?index="+_this.showIndex,	//build
           )
           .then(function(response) {
@@ -87,11 +87,8 @@ export default {
 <style scoped>
 .scrollBox{
 	position: relative;
-	height: 540px;
+	height: 480px;
 	width: 100%;
-}
-.scroll{
-	position: relative;
-	height: 800px;
+	margin-bottom: 100px;
 }
 </style>
