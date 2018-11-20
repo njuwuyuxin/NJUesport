@@ -28,6 +28,9 @@ a{
   text-decoration: none;
   color:inherit;
 }
+html,body{
+  overflow-x: hidden;
+}
 #app {
 }
 </style>
