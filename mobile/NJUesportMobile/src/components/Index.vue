@@ -124,8 +124,10 @@ export default {
 }
 .body{
 	left: 50%;
+	/*left:7%;*/
 	width: 318px;
-	margin-left: -153px; /*该数值为特殊计算而来*/
+	/*width: 89%;*/
+	margin-left: -153px; 
 	height: auto;
 	position: relative;
 }

@@ -28,6 +28,9 @@ export default {
 .body{
 	width: 145px;
 	border: 1px solid lightgray;
+	border-top: 0;
+	border-left: 0;
+	border-right: 0;
 	border-radius: 5px;
 	float: left;
 	margin-right: 12px;
