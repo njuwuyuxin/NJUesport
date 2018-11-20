@@ -7,7 +7,7 @@
           <slideritem v-for="(item,index) in someList" :key="index" :style="item.style" v-html="item.html"></slideritem>
           <!-- 设置loading,可自定义 -->
           <!-- <div slot="loading">loading...</div> -->
-          <div slot="loading"><a href="https://steamcn.com/t429743-1-1" target="_blank"><img src="https://image-1253276483.cos.ap-shanghai.myqcloud.com/image/banner/banner1.jpg"></a></div>
+          <div slot="loading"><img src="https://image-1253276483.cos.ap-shanghai.myqcloud.com/image/banner/banner_2018dongzhi.jpg"></div>
       </slider>
 </div>
 </template>
