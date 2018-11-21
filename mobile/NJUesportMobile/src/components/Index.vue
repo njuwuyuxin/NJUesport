@@ -1,24 +1,24 @@
 <template>
-  	<div class="index">
-  	    <SlideImg></SlideImg>
-  	    <div class="bodyframe">
-    	    	<div class="body">
-      		    	<div class="Title1">最新活动</div>
-        	    		<div class="act">
-        			    	  <NewsCard v-for="news in activities" v-bind:NewsInfo=news :key="news.id"></NewsCard>
-        			    </div>
-        			    <div class="Title2">精彩回顾</div>
-        			    <div class="review">
-        			    	  <NewsCard v-for="news in reviews" v-bind:NewsInfo=news :key="news.id"></NewsCard>
-        			    </div>
-      		    </div>
-  	    </div>
-  	</div>
+  <div class="index">
+  	<SlideImg></SlideImg>
+  	<div class="bodyframe">
+    	<div class="body">
+	  		<div class="Title1">最新活动</div>
+			<div class="act">
+		    	  <NewsCard v-for="news in activities" v-bind:NewsInfo=news :key="news.id"></NewsCard>
+		    </div>
+		    <div class="Title2">精彩回顾</div>
+		    <div class="review">
+		    	  <NewsCard v-for="news in reviews" v-bind:NewsInfo=news :key="news.id"></NewsCard>
+		    </div>
+		</div>
+	</div>
+  </div>
 </template>
 
 <script>
-import SlideImg from'./utils/SlideImg'
-import NewsCard from'./utils/Newscard'
+import NewsCard from './utils/NewsCard'
+import SlideImg from './utils/SlideImg'
 export default {
   name: 'Index',
   data () {
@@ -107,53 +107,45 @@ export default {
       	href:"https://steamcn.com/t381795-1-1",
         id:"6"
       },
-      {
-      	title:"2017冬至未至社团嘉年华",
-      	date:"2017年12月17日",
-      	class:"展台活动",
-      	coverPic:"https://image-1253276483.cos.ap-shanghai.myqcloud.com/image/card/2017dongzhi.jpg",
-      	href:"https://mp.weixin.qq.com/s/pp2WGeLEESrol9Xt_RMV1w",
-        id:"7"
-      },
       ],
     }
   },
   components:{
-    SlideImg,
-    NewsCard,
-  },
+  	NewsCard,
+  	SlideImg,
+  }
 }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-.Title1{
-	height: 100px;
-	font-size: 32px;
-	color:#63065f;
-	font-weight: bold;
-	line-height: 100px;
-}
-.Title2{
-	height: 80px;
-	font-size: 32px;
-	font-weight: bold;
-	color:#63065f;
-}
 .bodyframe{
 	position: relative;
 }
 .body{
 	left: 50%;
-	width: 1252px;
-	margin-left: -626px;
+	/*left:7%;*/
+	width: 318px;
+	/*width: 89%;*/
+	margin-left: -153px; 
 	height: auto;
 	position: relative;
 }
-.act{
-	width: 1252px;
-	height: auto;
+.Title1{
+	height: 50px;
+	font-size: 18px;
+	color:#63065f;
+	font-weight: bold;
+	line-height: 50px;
 }
+.Title2{
+	height: 50px;
+	line-height: 50px;
+	font-size: 18px;
+	font-weight: bold;
+	color:#63065f;
+}
+
 .act:after,.review:after{
 	content: "020"; 
 	display: block; 

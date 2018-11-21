@@ -1,8 +1,8 @@
 {
-  "name": "nju_esport",
+  "name": "njuesportmobile",
   "version": "1.0.0",
-  "description": "南大电竞社官网",
-  "author": "Yuxin Wu",
+  "description": "南大电竞社官网移动版",
+  "author": "Yuxin Wu <876465382@qq.com>",
   "private": true,
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
@@ -11,12 +11,11 @@
   },
   "dependencies": {
     "vue": "^2.5.2",
-    "vue-concise-slider": "^3.3.2",
+    "vue-router": "^3.0.1",
     "vue-scroller": "^2.2.4"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",
-    "axios": "^0.18.0",
     "babel-core": "^6.22.1",
     "babel-helper-vue-jsx-merge-props": "^2.0.3",
     "babel-loader": "^7.1.1",
@@ -45,7 +44,6 @@
     "uglifyjs-webpack-plugin": "^1.1.1",
     "url-loader": "^0.5.8",
     "vue-loader": "^13.3.0",
-    "vue-router": "^3.0.1",
     "vue-style-loader": "^3.0.1",
     "vue-template-compiler": "^2.5.2",
     "webpack": "^3.6.0",

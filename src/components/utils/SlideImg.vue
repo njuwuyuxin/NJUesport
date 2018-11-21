@@ -24,9 +24,10 @@ export default {
         options: {
           currentPage: 0,
           thresholdDistance:100,
-          thresholdTime:100,
+          thresholdTime:500,
           autoplay:4000,
           loop:true,
+          infinite:1,
           direction:'horizontal',
           loopedSlides:1,
           slidesToScroll:1,
@@ -86,7 +87,6 @@ export default {
     methods: {
       // Listener event
       slide (data) {
-        //console.log(data)
       },
       onTap (data) {
         //console.log(data);
