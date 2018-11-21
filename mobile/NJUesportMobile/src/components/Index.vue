@@ -45,7 +45,7 @@ export default {
       	date:"2018年11月14日至25日",
       	class:"游戏大选",
       	coverPic:"https://image-1253276483.cos.ap-shanghai.myqcloud.com/image/card/2018njuga.jpg",
-      	href:"https://www.wjx.top/jq/30747979.aspx",
+      	href:"https://tp.wjx.top/jq/31130953.aspx",
         id:"3"
       },
       {
