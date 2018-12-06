@@ -9,6 +9,7 @@ import Department from'./components/Department'
 import Activities from'./components/Activities'
 import Partner from'./components/Partner'
 import Contact from'./components/Contact'
+import Salon3 from'./components/GameSalon3rd'
 import axios from "axios";
 
 Vue.prototype.$axios = axios;
@@ -23,6 +24,7 @@ const router=new VueRouter({
 		{path:"/Activities",component:Activities},
 		{path:"/Partner",component:Partner},
 		{path:"/Contact",component:Contact},
+		{path:"/GameSalon3rd",component:Salon3},
 	],
 	mode:"history"
 })
