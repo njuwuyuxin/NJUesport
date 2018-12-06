@@ -11,6 +11,8 @@
   					下午场 13:00-17:00 </br>
   					江苏省南京市栖霞区仙林大道163号 </br>
   					南京大学仙林校区九食堂西区 </br>
+  					</br>
+  					<div class="baidumap" id="allmap"></div>
   				</div>
   				<div class="col-2">
   					NJU电玩姬是南大电竞社电玩分部运营的 </br>
@@ -21,6 +23,7 @@
   					目前已覆盖QQ、微信、微博三平台， </br>
   					推荐关注QQ公众号，与电玩姬直接互动！ </br>
   				</div>
+  				
   			</div>
 		    <div class="part3">
 		    	<div class="p3-frame">
@@ -65,18 +68,39 @@
 </template>
 
 <script>
+import BMap from 'BMap'
+import BMapSymbolSHAPEPOINT from 'BMap_Symbol_SHAPE_POINT'
 export default {
   name: 'Salon3',
   data () {
     return {
       
     }
+  },
+  mounted(){
+  	this.baiduMap();
+  },
+  methods:{
+  	 baiduMap:function(){
+	     var map = new BMap.Map('allmap');
+	     var point = new BMap.Point(118.962218,32.12253);
+	     map.centerAndZoom(point, 19);
+	     map.enableScrollWheelZoom(true);
+	     var marker = new BMap.Marker(point);  // 创建标注
+	     map.addOverlay(marker);              // 将标注添加到地图中
+	}
   }
 }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+.baidumap{
+	width: 520px;
+	height: 220px;
+	margin-left: 14px;
+	float: left;
+}
 .salon3{
 	font-family: "黑体";
 	text-align: center;
@@ -89,6 +113,7 @@ export default {
 	position: relative;
 }
 .body{
+	width: 1222px;
 	position: relative;
 	left: 50%;
 	margin-left: -611px;
