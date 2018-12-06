@@ -84,7 +84,7 @@ export default {
   	 baiduMap:function(){
 	     var map = new BMap.Map('allmap');
 	     var point = new BMap.Point(118.962218,32.12253);
-	     map.centerAndZoom(point, 19);
+	     map.centerAndZoom(point, 18);
 	     map.enableScrollWheelZoom(true);
 	     var marker = new BMap.Marker(point);  // 创建标注
 	     map.addOverlay(marker);              // 将标注添加到地图中
