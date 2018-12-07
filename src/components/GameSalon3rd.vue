@@ -1,16 +1,18 @@
 <template>
   <div class="salon3">
   	<div class="back">
+  	<!-- </div> -->
   		<!-- <div class="part1"></div> -->
   		<img src="https://image-1253276483.cos.ap-shanghai.myqcloud.com/image/GameSalon3rd/part1.png" class="pic">
   		<div class="body">
-  			<div class="part2">
-  				<div class="video1"><video src="https://image-1253276483.cos.ap-shanghai.myqcloud.com/video/SpiderMan.mp4" width="1200px" height="700px" muted autoplay loop></video></div>
+  			<div class="video1"><video v-bind:src="videoSrc" width="1200px" height="700px" muted autoplay loop></video></div>
+
+  			<div class="part2">	
   				<div class="video-logos">
-  					<a href="https://www.sonkwo.com/products/2293?game_id=2293&rcode=cbfcf0c1c4" target="_blank"><img src="https://image-1253276483.cos.ap-shanghai.myqcloud.com/image/GameSalon3rd/overcooked_logo.png"></a>
-  					<a href="http://act.wangyuan.com/gjqt3/201811/sale/index.html" target="_blank"><img src="https://image-1253276483.cos.ap-shanghai.myqcloud.com/image/GameSalon3rd/gujian3_logo.png"></a>
-  					<a href="https://store.playstation.com/zh-hans-hk/product/UP1004-CUSA03041_00-ASIAPLACEHOLDER0" target="_blank"><img src="https://image-1253276483.cos.ap-shanghai.myqcloud.com/image/GameSalon3rd/rdr2_logo.png"></a>
-  					<a href="https://store.steampowered.com/app/857950/Incredible_Mandy/" target="_blank"><img src="https://image-1253276483.cos.ap-shanghai.myqcloud.com/image/GameSalon3rd/mandy_logo.png"></a>
+  					<a href="https://www.sonkwo.com/products/2293?game_id=2293&rcode=cbfcf0c1c4" target="_blank"><img src="https://image-1253276483.cos.ap-shanghai.myqcloud.com/image/GameSalon3rd/overcooked_logo.png" v-on:mouseover="videoSrc='https://image-1253276483.cos.ap-shanghai.myqcloud.com/video/gujian3_1.mp4'"></a>
+  					<a href="http://act.wangyuan.com/gjqt3/201811/sale/index.html" target="_blank"><img src="https://image-1253276483.cos.ap-shanghai.myqcloud.com/image/GameSalon3rd/gujian3_logo.png" v-on:mouseover="videoSrc='https://image-1253276483.cos.ap-shanghai.myqcloud.com/video/gujian3_2.mp4'"></a>
+  					<a href="https://store.playstation.com/zh-hans-hk/product/UP1004-CUSA03041_00-ASIAPLACEHOLDER0" target="_blank"><img src="https://image-1253276483.cos.ap-shanghai.myqcloud.com/image/GameSalon3rd/rdr2_logo.png" v-on:mouseover="videoSrc='https://image-1253276483.cos.ap-shanghai.myqcloud.com/video/gujian3_3.mp4'"></a>
+  					<a href="https://store.steampowered.com/app/857950/Incredible_Mandy/" target="_blank"><img src="https://image-1253276483.cos.ap-shanghai.myqcloud.com/image/GameSalon3rd/mandy_logo.png" v-on:mouseover="videoSrc='https://image-1253276483.cos.ap-shanghai.myqcloud.com/video/gujian3_4.mp4'"></a>
   				</div>
   			</div>
 		    <div class="part3">
@@ -96,7 +98,8 @@ export default {
   name: 'Salon3',
   data () {
     return {
-      
+      videoID:4,
+      videoSrc:"https://image-1253276483.cos.ap-shanghai.myqcloud.com/video/gujian3_1.mp4",
     }
   },
   mounted(){
@@ -133,13 +136,12 @@ export default {
 .back{
 	background-color: #090917;
 	position: relative;
-	z-index: -2;
 }
 .body{
-	width: 1222px;
+	width: 1274px;
 	position: relative;
 	left: 50%;
-	margin-left: -611px;
+	margin-left: -637px;
 }
 .pic{
 	width: 100%;
@@ -152,9 +154,11 @@ export default {
 	background: url(https://image-1253276483.cos.ap-shanghai.myqcloud.com/image/GameSalon3rd/part1.png);
 }
 .part2{
+	position: relative;
 	width: 1274px;
 	height: 736px;
 	background: url(https://image-1253276483.cos.ap-shanghai.myqcloud.com/image/GameSalon3rd/part2.png);
+	z-index: 2;
 }
 .video1{
 	position: absolute;
@@ -162,13 +166,15 @@ export default {
 	margin-left: 40px;
 	width: 1200px;
 	height: 600px;
-	z-index: -1;
+	z-index: 1;
 }
 .video-logos{
+	position: absolute;
 	padding-top: 580px;
 	margin-left: 60px;
 	width: 1170px;
 	height: 109px;
+	z-index: 999;
 }
 .video-logos a{
 	display: block;
