@@ -9,10 +9,10 @@
 
   			<div class="part2">	
   				<div class="video-logos">
-  					<a href="https://www.sonkwo.com/products/2293?game_id=2293&rcode=cbfcf0c1c4" target="_blank"><img src="https://image-1253276483.cos.ap-shanghai.myqcloud.com/image/GameSalon3rd/overcooked_logo.png" v-on:mouseover="videoSrc='https://image-1253276483.cos.ap-shanghai.myqcloud.com/video/gujian3_1.mp4'"></a>
-  					<a href="http://act.wangyuan.com/gjqt3/201811/sale/index.html" target="_blank"><img src="https://image-1253276483.cos.ap-shanghai.myqcloud.com/image/GameSalon3rd/gujian3_logo.png" v-on:mouseover="videoSrc='https://image-1253276483.cos.ap-shanghai.myqcloud.com/video/gujian3_2.mp4'"></a>
-  					<a href="https://store.playstation.com/zh-hans-hk/product/UP1004-CUSA03041_00-ASIAPLACEHOLDER0" target="_blank"><img src="https://image-1253276483.cos.ap-shanghai.myqcloud.com/image/GameSalon3rd/rdr2_logo.png" v-on:mouseover="videoSrc='https://image-1253276483.cos.ap-shanghai.myqcloud.com/video/gujian3_3.mp4'"></a>
-  					<a href="https://store.steampowered.com/app/857950/Incredible_Mandy/" target="_blank"><img src="https://image-1253276483.cos.ap-shanghai.myqcloud.com/image/GameSalon3rd/mandy_logo.png" v-on:mouseover="videoSrc='https://image-1253276483.cos.ap-shanghai.myqcloud.com/video/gujian3_4.mp4'"></a>
+  					<a href="https://www.sonkwo.com/products/2293?game_id=2293&rcode=cbfcf0c1c4" target="_blank"><img src="https://image-1253276483.cos.ap-shanghai.myqcloud.com/image/GameSalon3rd/overcooked_logo.png" v-on:mouseover="videoSrc='https://image-1253276483.cos.ap-shanghai.myqcloud.com/video/overcooked.mp4'"></a>
+  					<a href="http://act.wangyuan.com/gjqt3/201811/sale/index.html" target="_blank"><img src="https://image-1253276483.cos.ap-shanghai.myqcloud.com/image/GameSalon3rd/gujian3_logo.png" v-on:mouseover="videoSrc='https://image-1253276483.cos.ap-shanghai.myqcloud.com/video/gujian3.mp4'"></a>
+  					<a href="https://store.playstation.com/zh-hans-hk/product/UP1004-CUSA03041_00-ASIAPLACEHOLDER0" target="_blank"><img src="https://image-1253276483.cos.ap-shanghai.myqcloud.com/image/GameSalon3rd/rdr2_logo.png" v-on:mouseover="videoSrc='https://image-1253276483.cos.ap-shanghai.myqcloud.com/video/rdr2.mp4'"></a>
+  					<a href="https://store.steampowered.com/app/857950/Incredible_Mandy/" target="_blank"><img src="https://image-1253276483.cos.ap-shanghai.myqcloud.com/image/GameSalon3rd/mandy_logo.png" v-on:mouseover="videoSrc='https://image-1253276483.cos.ap-shanghai.myqcloud.com/video/mandy.mp4'"></a>
   				</div>
   			</div>
 		    <div class="part3">
@@ -27,19 +27,6 @@
   				<div class="col-2">				
   					<div class="baidumap" id="allmap"></div>
   				</div>
-		    	<!-- <div class="p3-frame">
-		    		<a href="https://www.sonkwo.com/products/2293?game_id=2293&rcode=cbfcf0c1c4" target="_blank"><img src="https://image-1253276483.cos.ap-shanghai.myqcloud.com/image/GameSalon3rd/overcooked_logo.png"></a>
-		    		<a href="https://www.sonkwo.com/products/3593?game_id=3658&rcode=cbfcf0c1c4" target="_blank"><img src="https://image-1253276483.cos.ap-shanghai.myqcloud.com/image/GameSalon3rd/overcooked2_logo.png"></a>    	
-			    	<a href="https://store.steampowered.com/app/857950/Incredible_Mandy/" target="_blank"><img src="https://image-1253276483.cos.ap-shanghai.myqcloud.com/image/GameSalon3rd/mandy_logo.png"></a>
-			    	<a href="https://store.steampowered.com/app/698870/Metaverse_Keeper/" target="_blank"><img src="https://image-1253276483.cos.ap-shanghai.myqcloud.com/image/GameSalon3rd/leak_logo.png"></a>
-			    	<a href="https://store.playstation.com/zh-hans-hk/product/UP1004-CUSA03041_00-ASIAPLACEHOLDER0" target="_blank"><img src="https://image-1253276483.cos.ap-shanghai.myqcloud.com/image/GameSalon3rd/rdr2_logo.png"></a>
-			    	<a href="https://store.playstation.com/zh-hans-hk/product/HP9000-CUSA09893_00-ASIAPLACEHOLDER0" target="_blank"><img src="https://image-1253276483.cos.ap-shanghai.myqcloud.com/image/GameSalon3rd/msm_logo.png"></a>
-			    	<a href="https://www.sonkwo.com/products/3796?game_id=3907&rcode=cbfcf0c1c4" target="_blank"><img src="https://image-1253276483.cos.ap-shanghai.myqcloud.com/image/GameSalon3rd/sc6_logo.png"></a>
-			    	<a href="http://act.wangyuan.com/gjqt3/201811/sale/index.html" target="_blank"><img src="https://image-1253276483.cos.ap-shanghai.myqcloud.com/image/GameSalon3rd/gujian3_logo.png"></a>
-			    	<div class="black-block"></div>
-			    	<a href="https://www.ubisoft.com.cn/games/console/jd2019" target="_blank"><img src="https://image-1253276483.cos.ap-shanghai.myqcloud.com/image/GameSalon3rd/jd19_logo.png"></a>
-			    	<a href="http://www.sonkwo.hk/products/5?game_id=7&rcode=cbfcf0c1c4" target="_blank"><img src="https://image-1253276483.cos.ap-shanghai.myqcloud.com/image/GameSalon3rd/re2_logo.png"></a>
-		    	</div> -->
 		    	
 		    </div>
 		    <div class="part4">
@@ -99,7 +86,7 @@ export default {
   data () {
     return {
       videoID:4,
-      videoSrc:"https://image-1253276483.cos.ap-shanghai.myqcloud.com/video/gujian3_1.mp4",
+      videoSrc:"https://image-1253276483.cos.ap-shanghai.myqcloud.com/video/gujian3.mp4",
     }
   },
   mounted(){
