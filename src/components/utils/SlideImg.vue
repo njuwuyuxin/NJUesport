@@ -49,9 +49,16 @@ export default {
           {
             html: '',
             style: {
+            	'background':'url(https://image-1253276483.cos.ap-shanghai.myqcloud.com/image/banner/banner_salon20181216.jpg)'
+            },
+            href:"https://njuesport.club/GameSalon3rd"
+          },
+          {
+            html: '',
+            style: {
             	'background':'url(https://image-1253276483.cos.ap-shanghai.myqcloud.com/image/banner/banner_2018dongzhi.jpg)'
             },
-            href:"#"
+            href:"https://mp.weixin.qq.com/s/hWTouIDpLI6FKggTMi6kmA"
           },
           {
             html: '',
