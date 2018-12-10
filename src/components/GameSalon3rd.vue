@@ -17,11 +17,11 @@
   			</div>
 		    <div class="part3">
 		    	<div class="col-1">
-  					2018年12月16日 </br>
-  					上午场 09:00-12:00 </br>
-  					下午场 13:00-17:00 </br>
-  					江苏省南京市栖霞区仙林大道163号 </br>
-  					南京大学仙林校区九食堂西区 </br>
+  					2018年12月16日</br>
+  					上午场 09:00-12:00</br>
+  					下午场 13:00-17:00</br>
+  					江苏省南京市栖霞区仙林大道163号</br>
+  					南京大学仙林校区九食堂西区</br>
   					</br>
   				</div>
   				<div class="col-2">				
@@ -36,9 +36,10 @@
 		    		<a href="https://store.steampowered.com/app/698870/Metaverse_Keeper/" target="_blank"><img src="https://image-1253276483.cos.ap-shanghai.myqcloud.com/image/GameSalon3rd/leak_logo.png"></a>
 		    		<a href="https://store.playstation.com/zh-hans-hk/product/HP9000-CUSA09893_00-ASIAPLACEHOLDER0" target="_blank"><img src="https://image-1253276483.cos.ap-shanghai.myqcloud.com/image/GameSalon3rd/msm_logo.png"></a>
 		    		<a href="https://www.sonkwo.com/products/3796?game_id=3907&rcode=cbfcf0c1c4" target="_blank"><img src="https://image-1253276483.cos.ap-shanghai.myqcloud.com/image/GameSalon3rd/sc6_logo.png"></a>
-					<div class="black-block"></div>
+			    	<a href="https://store.playstation.com/zh-hans-hk/product/HP9000-CUSA07413_00-00000000GODOFWAR" target="_blank"><img src="https://image-1253276483.cos.ap-shanghai.myqcloud.com/image/GameSalon3rd/gow_logo.png"></a>
+			    	<a href="https://store.playstation.com/zh-hans-hk/product/HP0700-CUSA13137_00-ASIAFULLGAME0000" target="_blank"><img src="https://image-1253276483.cos.ap-shanghai.myqcloud.com/image/GameSalon3rd/ge3_logo.png"></a>
+			    	<a href="http://www.sonkwo.hk/products/3?game_id=4&?rcode=cbfcf0c1c4" target="_blank"><img src="https://image-1253276483.cos.ap-shanghai.myqcloud.com/image/GameSalon3rd/dmc5_logo.png"></a>
 			    	<a href="https://www.ubisoft.com.cn/games/console/jd2019" target="_blank"><img src="https://image-1253276483.cos.ap-shanghai.myqcloud.com/image/GameSalon3rd/jd19_logo.png"></a>
-			    	<a href="http://www.sonkwo.hk/products/5?game_id=7&rcode=cbfcf0c1c4" target="_blank"><img src="https://image-1253276483.cos.ap-shanghai.myqcloud.com/image/GameSalon3rd/re2_logo.png"></a>
 			    	
 		    	</div>
 		    </div>
@@ -60,7 +61,16 @@
 		    		规则待定 </br>
 		    	</div>
 		    </div>
-		    <div class="part7"></div>
+		    <div class="part7">
+		    	<div class="gift">
+		    		试玩指定游戏即可领取周边</br>
+		    		部分周边数量有限先到先得
+		    	</div>
+		    	<div class="draw">
+			    	现场领取集章抽奖卡</br>
+			    	试玩任意两款游戏并盖章即可参与幸运抽奖
+			    </div>
+		    </div>
 		    <div class="part8">
 		    	<div class="intro">
 		    		NJU电玩姬是南大电竞社电玩分部运营的</br>
@@ -110,7 +120,7 @@ export default {
 .baidumap{
 	width: 550px;
 	height: 220px;
-	margin-left: 14px;
+	margin-left: 19px;
 	float: left;
 }
 .salon3{
@@ -233,7 +243,7 @@ export default {
 .col-1{
 	width: 510px;
 	height: 160px;
-	margin-left: 80px;
+	margin-left: 75px;
 	padding-top: 80px;
 	float: left;
 }
@@ -243,5 +253,15 @@ export default {
 	margin-left: 60px;
 	padding-top: 50px;
 	float: left;
+}
+.gift,.draw{
+	width: 500px;
+	height: 40px;
+	float: left;
+	margin-left: 80px;
+	padding-top: 75px;
+}
+.draw{
+	margin-left: 115px;
 }
 </style>
