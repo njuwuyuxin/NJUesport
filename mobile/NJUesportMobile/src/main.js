@@ -27,6 +27,9 @@ const router=new VueRouter({
 		{path:"/Contact",component:Contact},
 		{path:"/GameSalon3rd",component:Salon3},
 	],
+	scrollBehavior (to,from,savedPosition){
+		return { x:0,y:0 }
+	},
 	mode:"history"
 })
 
