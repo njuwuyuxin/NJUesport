@@ -13,14 +13,13 @@
   				</div>
   			</div>
 		    <div class="part3">
-		    	<div class="demologos">
+		    	<!-- <div class="demologos">
 		    		<a href="https://www.sonkwo.com/products/2293?game_id=2293&rcode=cbfcf0c1c4" target="_blank"><img src="https://image-1253276483.cos.ap-shanghai.myqcloud.com/image/GameSalon3rd/overcooked_logo.png"></a><a href="http://act.wangyuan.com/gjqt3/201811/sale/index.html" target="_blank"><img src="https://image-1253276483.cos.ap-shanghai.myqcloud.com/image/GameSalon3rd/gujian3_logo.png"></a><a href="https://store.playstation.com/zh-hans-hk/product/UP1004-CUSA03041_00-ASIAPLACEHOLDER0" target="_blank"><img src="https://image-1253276483.cos.ap-shanghai.myqcloud.com/image/GameSalon3rd/rdr2_logo.png"></a><a href="https://store.steampowered.com/app/857950/Incredible_Mandy/" target="_blank"><img src="https://image-1253276483.cos.ap-shanghai.myqcloud.com/image/GameSalon3rd/mandy_logo.png"></a>
-		    	</div> 	
+		    	</div> 	 -->
 		    </div>
 		    <div class="part4">
 		    	<div class="morelogos">
-		    		<a href="https://www.sonkwo.com/products/3593?game_id=3658&rcode=cbfcf0c1c4" target="_blank"><img src="https://image-1253276483.cos.ap-shanghai.myqcloud.com/image/GameSalon3rd/overcooked2_logo.png"></a><a href="https://store.steampowered.com/app/698870/Metaverse_Keeper/" target="_blank"><img src="https://image-1253276483.cos.ap-shanghai.myqcloud.com/image/GameSalon3rd/leak_logo.png"></a><a href="https://store.playstation.com/zh-hans-hk/product/HP9000-CUSA09893_00-ASIAPLACEHOLDER0" target="_blank"><img src="https://image-1253276483.cos.ap-shanghai.myqcloud.com/image/GameSalon3rd/msm_logo.png"></a><a href="https://www.sonkwo.com/products/3796?game_id=3907&rcode=cbfcf0c1c4" target="_blank"><img src="https://image-1253276483.cos.ap-shanghai.myqcloud.com/image/GameSalon3rd/sc6_logo.png"></a>
-					<a href="https://www.ubisoft.com.cn/games/console/jd2019" target="_blank"><img src="https://image-1253276483.cos.ap-shanghai.myqcloud.com/image/GameSalon3rd/jd19_logo.png"></a><a href="http://www.sonkwo.hk/products/5?game_id=7&rcode=cbfcf0c1c4" target="_blank"><img src="https://image-1253276483.cos.ap-shanghai.myqcloud.com/image/GameSalon3rd/re2_logo.png"></a>
+		    		<a href="https://www.sonkwo.com/products/3593?game_id=3658&rcode=cbfcf0c1c4" target="_blank"><img src="https://image-1253276483.cos.ap-shanghai.myqcloud.com/image/GameSalon3rd/overcooked2_logo.png"></a><a href="https://store.steampowered.com/app/698870/Metaverse_Keeper/" target="_blank"><img src="https://image-1253276483.cos.ap-shanghai.myqcloud.com/image/GameSalon3rd/leak_logo.png"></a><a href="https://store.playstation.com/zh-hans-hk/product/HP9000-CUSA09893_00-ASIAPLACEHOLDER0" target="_blank"><img src="https://image-1253276483.cos.ap-shanghai.myqcloud.com/image/GameSalon3rd/msm_logo.png"></a><a href="https://www.sonkwo.com/products/3796?game_id=3907&rcode=cbfcf0c1c4" target="_blank"><img src="https://image-1253276483.cos.ap-shanghai.myqcloud.com/image/GameSalon3rd/sc6_logo.png"></a><a href="https://store.playstation.com/zh-hans-hk/product/HP9000-CUSA07413_00-00000000GODOFWAR" target="_blank"><img src="https://image-1253276483.cos.ap-shanghai.myqcloud.com/image/GameSalon3rd/gow_logo.png"></a><a href="https://store.playstation.com/zh-hans-hk/product/HP0700-CUSA13137_00-ASIAFULLGAME0000" target="_blank"><img src="https://image-1253276483.cos.ap-shanghai.myqcloud.com/image/GameSalon3rd/ge3_logo.png"></a><a href="http://www.sonkwo.hk/products/3?game_id=4&?rcode=cbfcf0c1c4" target="_blank"><img src="https://image-1253276483.cos.ap-shanghai.myqcloud.com/image/GameSalon3rd/dmc5_logo.png"></a><a href="https://www.ubisoft.com.cn/games/console/jd2019" target="_blank"><img src="https://image-1253276483.cos.ap-shanghai.myqcloud.com/image/GameSalon3rd/jd19_logo.png"></a>
 		    	</div>
 		    </div>
 		    <div class="part5">
@@ -127,7 +126,7 @@ export default {
 }
 .part3{
 	width: 360px;
-	height: 132px;
+	height: 195px;
 	background: url(https://image-1253276483.cos.ap-shanghai.myqcloud.com/image/GameSalon3rd/mobile/mobile_part3.png);
 	background-size: contain;
 }
