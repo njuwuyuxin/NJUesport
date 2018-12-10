@@ -3,7 +3,7 @@
   	<div class="back">
   		<img src="https://image-1253276483.cos.ap-shanghai.myqcloud.com/image/GameSalon3rd/mobile/mobile_part1.png" class="pic">
   		<div class="body">
-  			<div class="video1"><video v-bind:src="videoSrc" width="310px" height="180px" muted autoplay loop></video></div>
+  			<div class="video1"><video v-bind:src="videoSrc" width="310px" height="180px" muted autoplay loop playsinline webkit-playsinline></video></div>
 		    <div class="part3">
 		    	<!-- <div class="demologos">
 		    		<a href="https://www.sonkwo.com/products/2293?game_id=2293&rcode=cbfcf0c1c4" target="_blank"><img src="https://image-1253276483.cos.ap-shanghai.myqcloud.com/image/GameSalon3rd/overcooked_logo.png"></a><a href="http://act.wangyuan.com/gjqt3/201811/sale/index.html" target="_blank"><img src="https://image-1253276483.cos.ap-shanghai.myqcloud.com/image/GameSalon3rd/gujian3_logo.png"></a><a href="https://store.playstation.com/zh-hans-hk/product/UP1004-CUSA03041_00-ASIAPLACEHOLDER0" target="_blank"><img src="https://image-1253276483.cos.ap-shanghai.myqcloud.com/image/GameSalon3rd/rdr2_logo.png"></a><a href="https://store.steampowered.com/app/857950/Incredible_Mandy/" target="_blank"><img src="https://image-1253276483.cos.ap-shanghai.myqcloud.com/image/GameSalon3rd/mandy_logo.png"></a>
@@ -110,6 +110,7 @@ export default {
 .back{
 	background-color: #1e2037;
 	position: relative;
+	/*z-index: -2;*/
 }
 .body{
 	width: 360px;
@@ -138,11 +139,18 @@ export default {
 	background-size: contain;
 }
 .video1{
-	position: absolute;
+	/*position: absolute;
 	padding-top: 6px;
 	margin-left: 24px;
 	width: 310px;
 	height: 180px;
+	z-index: 1;*/
+}
+.video1 video{
+	position: absolute;
+	margin-left: -152px;
+	margin-top: 10px;
+	x5-video-player-type:"h5";
 	z-index: 1;
 }
 
