@@ -35,8 +35,8 @@ export default {
       },
       {
       	title:"2018冬至未至社团嘉年华",
-      	date:"2018年12月9日",
-      	class:"游戏沙龙",
+      	date:"2018年12月8日",
+      	class:"展台活动",
       	coverPic:"https://image-1253276483.cos.ap-shanghai.myqcloud.com/image/card/2018dongzhi.jpg",
       	href:"https://mp.weixin.qq.com/s/hWTouIDpLI6FKggTMi6kmA",
         id:"2"
