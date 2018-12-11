@@ -10,6 +10,7 @@ import Department from'./components/Department'
 import Activities from'./components/Activities'
 import Partner from'./components/Partner'
 import Contact from'./components/Contact'
+import Salon3 from'./components/GameSalon3rd'
 
 Vue.prototype.$axios = axios;
 Vue.config.productionTip = false
@@ -24,7 +25,11 @@ const router=new VueRouter({
 		{path:"/Activities",component:Activities},
 		{path:"/Partner",component:Partner},
 		{path:"/Contact",component:Contact},
+		{path:"/GameSalon3rd",component:Salon3},
 	],
+	scrollBehavior (to,from,savedPosition){
+		return { x:0,y:0 }
+	},
 	mode:"history"
 })
 

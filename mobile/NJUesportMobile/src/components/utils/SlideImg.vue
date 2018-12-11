@@ -4,9 +4,11 @@
       <!-- 配置slider组件 -->
       <slider ref="slider" :options="options" @slide='slide' @tap='onTap' @init='onInit'>
           <!-- 直接使用slideritem slot -->
+          <!-- 对于需要使用路由的链接单独提取出来临时魔改,非长远之计 -->
+          <slideritem :style="special.style"><router-link to="/GameSalon3rd" style="display: block;width: 100%;height: 100%;"></router-link></slideritem>
           <slideritem v-for="(item,index) in someList" :key="index" :style="item.style" v-html="item.html"></slideritem>
           <!-- 设置loading,可自定义 -->
-          <div slot="loading" class="loading"></div>
+          <div slot="loading" class="loading"><router-link to="/GameSalon3rd" style="display: block;width: 100%;height: 100%;"></router-link></div>
       </slider>
 </div>
 </template>
@@ -34,6 +36,14 @@ export default {
           speed: 500,
           addActive:'',
           offsetLeft:'',
+        },
+        special:{
+          style: {
+              'background':'url(https://image-1253276483.cos.ap-shanghai.myqcloud.com/image/banner/banner_salon20181216.jpg)',
+              'background-repeat':'no-repeat',
+              'background-size':'140% 100%',
+              'background-position':"top center",
+            },
         }
       }
     },
@@ -45,55 +55,59 @@ export default {
       let that = this
       setTimeout(function () {
         that.someList = [
+          // {
+          //   html: '<router-link to="/GameSalon3rd" style="display:block;width:100vw;height:30vw"></router-link>',
+          //   style: {
+          //     'background':'url(https://image-1253276483.cos.ap-shanghai.myqcloud.com/image/banner/banner_salon20181216.jpg)',
+          //     'background-repeat':'no-repeat',
+          //     'background-size':'140% 100%',
+          //     'background-position':"top center",
+          //   },
+          // },
           {
-            html: '',
+            html: '<a href="https://mp.weixin.qq.com/s/hWTouIDpLI6FKggTMi6kmA"  style="display:block;width:100vw;height:30vw"></a>',
             style: {
             	'background':'url(https://image-1253276483.cos.ap-shanghai.myqcloud.com/image/banner/banner_2018dongzhi.jpg)',
               'background-repeat':'no-repeat',
               'background-size':'140% 100%',
               'background-position':"top center",
             },
-            href:"#"
           },
           {
-            html: '<a href="https://mp.weixin.qq.com/s/_ARdMvYzXtIQJLOtJJdR2Q" target="_blank" style="display:block;width:100vw;height:30vw"></a>',
+            html: '<a href="https://mp.weixin.qq.com/s/_ARdMvYzXtIQJLOtJJdR2Q" style="display:block;width:100vw;height:30vw"></a>',
             style: {
             	'background':'url(https://image-1253276483.cos.ap-shanghai.myqcloud.com/image/banner/banner_2018xinshengbei.jpg)',
               'background-repeat':'no-repeat',
               'background-size':'140% 100%',
               'background-position':"top center",
             },
-            href:"https://mp.weixin.qq.com/s/_ARdMvYzXtIQJLOtJJdR2Q"
           },
           {
-            html: '<a href="https://steamcn.com/t429743-1-1" target="_blank" style="display:block;width:100vw;height:30vw"></a>',
+            html: '<a href="https://steamcn.com/t429743-1-1" style="display:block;width:100vw;height:30vw"></a>',
             style: {
             	'background':'url(https://image-1253276483.cos.ap-shanghai.myqcloud.com/image/banner/banner_salon20181013.jpg)',
               'background-repeat':'no-repeat',
               'background-size':'140% 100%',
               'background-position':"top center",
             },
-            href:"https://steamcn.com/t429743-1-1"
           },
           {
-            html: '<a href="https://mp.weixin.qq.com/s/IxfZS0eXrAbSegLDc-294g" target="_blank" style="display:block;width:100vw;height:30vw"></a>',
+            html: '<a href="https://mp.weixin.qq.com/s/IxfZS0eXrAbSegLDc-294g"  style="display:block;width:100vw;height:30vw"></a>',
             style: {
             	'background':'url(https://image-1253276483.cos.ap-shanghai.myqcloud.com/image/banner/banner_2018pubg.jpg)',
               'background-repeat':'no-repeat',
               'background-size':'140% 100%',
               'background-position':"top center",
             },
-            href:"https://mp.weixin.qq.com/s/IxfZS0eXrAbSegLDc-294g"
           },
           {
-            html: '<a href="https://steamcn.com/t389636-1-1" target="_blank" style="display:block;width:100vw;height:30vw"></a>',
+            html: '<a href="https://steamcn.com/t389636-1-1" style="display:block;width:100vw;height:30vw"></a>',
             style: {
             	'background':'url(https://image-1253276483.cos.ap-shanghai.myqcloud.com/image/banner/banner_salon20180527.jpg)',
               'background-repeat':'no-repeat',
               'background-size':'140% 100%',
               'background-position':"top center",
             },
-            href:"https://steamcn.com/t389636-1-1"
           },
         ]
       }, 2000)
@@ -117,7 +131,7 @@ export default {
 .loading{
   width: 100vw;
   height: 30vw;
-  background:url(https://image-1253276483.cos.ap-shanghai.myqcloud.com/image/banner/banner_2018dongzhi.jpg);
+  background:url(https://image-1253276483.cos.ap-shanghai.myqcloud.com/image/banner/banner_salon20181216.jpg);
   background-repeat:no-repeat;
   background-size:140% 100%;
   background-position:top center;
