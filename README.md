@@ -38,6 +38,7 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
       	class:"游戏沙龙",
       	coverPic:"xxxx",  //封面图片url
       	href:"xxxxx",    //跳转url
+	routerLink:"xxxx" //移动端页面可选属性，一般不需要该属性，当跳转链接为路由时，将href填为#，同时在该属性中填相对路径
 	id:"xxxx"    //该条新闻的唯一id，不可重复，内容没有限制，建议语义化标签
 }
 ```

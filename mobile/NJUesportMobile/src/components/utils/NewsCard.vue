@@ -1,7 +1,11 @@
 <template>
   <div class="newsCard">
   	<div class="body">
-	  	<div class="imgBox"><a v-bind:href="NewsInfo.href"><img v-bind:src="NewsInfo.coverPic"></a></div>
+	  	<div class="imgBox">
+	  		<div v-if="NewsInfo.href!='#'"><a v-bind:href="NewsInfo.href"><img v-bind:src="NewsInfo.coverPic"></a></div>
+	  		<div v-else-if="NewsInfo.routerLink!='#'"><router-link v-bind:to="NewsInfo.routerLink"><img v-bind:src="NewsInfo.coverPic"></router-link></div>
+	  		<div v-else><img v-bind:src="NewsInfo.coverPic"></div>
+	  	</div>
 	  	<div class="title">{{NewsInfo.title}}</div>
 		<div class="date">{{NewsInfo.date}}</div>
 		<div class="tag">{{NewsInfo.class}}</div>
