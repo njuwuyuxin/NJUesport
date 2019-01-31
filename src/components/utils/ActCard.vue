@@ -14,6 +14,7 @@
 </template>
 
 <script>
+
 export default {
   name: 'ActCard',
   data () {
@@ -23,7 +24,7 @@ export default {
   },
   props:{
   	ActInfo:Object,
-  }
+  },
 }
 </script>
 
