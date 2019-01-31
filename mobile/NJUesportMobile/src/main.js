@@ -11,6 +11,7 @@ import Activities from'./components/Activities'
 import Partner from'./components/Partner'
 import Contact from'./components/Contact'
 import Salon3 from'./components/GameSalon3rd'
+import RE2sale from'./components/RE2sale'
 
 Vue.prototype.$axios = axios;
 Vue.config.productionTip = false
@@ -26,6 +27,7 @@ const router=new VueRouter({
 		{path:"/Partner",component:Partner},
 		{path:"/Contact",component:Contact},
 		{path:"/GameSalon3rd",component:Salon3},
+		{path:"/Sale",component:RE2sale},
 	],
 	scrollBehavior (to,from,savedPosition){
 		return { x:0,y:0 }

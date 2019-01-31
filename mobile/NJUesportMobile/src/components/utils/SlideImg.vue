@@ -5,7 +5,8 @@
       <slider ref="slider" :options="options" @slide='slide' @tap='onTap' @init='onInit'>
           <!-- 直接使用slideritem slot -->
           <!-- 对于需要使用路由的链接单独提取出来临时魔改,非长远之计 -->
-          <slideritem :style="special.style"><router-link to="/GameSalon3rd" style="display: block;width: 100%;height: 100%;"></router-link></slideritem>
+          <slideritem :style="special.style"><router-link to="/Sale" style="display: block;width: 100%;height: 100%;"></router-link></slideritem>
+          <slideritem :style="special.style2"><router-link to="/GameSalon3rd" style="display: block;width: 100%;height: 100%;"></router-link></slideritem>
           <slideritem v-for="(item,index) in someList" :key="index" :style="item.style" v-html="item.html"></slideritem>
           <!-- 设置loading,可自定义 -->
           <div slot="loading" class="loading"><router-link to="/GameSalon3rd" style="display: block;width: 100%;height: 100%;"></router-link></div>
@@ -39,11 +40,17 @@ export default {
         },
         special:{
           style: {
-              'background':'url(https://image-1253276483.cos.ap-shanghai.myqcloud.com/image/banner/banner_salon20181216.jpg)',
+              'background':'url(https://image-1253276483.cos.ap-shanghai.myqcloud.com/image/banner/banner_re2sale.jpg)',
               'background-repeat':'no-repeat',
               'background-size':'140% 100%',
               'background-position':"top center",
             },
+          style2: {
+            'background':'url(https://image-1253276483.cos.ap-shanghai.myqcloud.com/image/banner/banner_salon20181216.jpg)',
+            'background-repeat':'no-repeat',
+            'background-size':'140% 100%',
+            'background-position':"top center",
+          },
         }
       }
     },

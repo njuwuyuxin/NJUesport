@@ -7,7 +7,7 @@
           <slideritem v-for="(item,index) in someList" :key="index" :style="item.style" v-html="item.html"></slideritem>
           <!-- 设置loading,可自定义 -->
           <!-- <div slot="loading">loading...</div> -->
-          <div slot="loading"><a href="https://njuesport.club/Sale" target="_blank"><img src="https://image-1253276483.cos.ap-shanghai.myqcloud.com/image/RE2sale/pc/banner_re2sale.jpg"></a></div>
+          <div slot="loading"><a href="https://njuesport.club/Sale" target="_blank"><img src="https://image-1253276483.cos.ap-shanghai.myqcloud.com/image/banner/banner_re2sale.jpg"></a></div>
       </slider>
 </div>
 </template>
@@ -49,7 +49,7 @@ export default {
           {
             html: '',
             style: {
-              'background':'url(https://image-1253276483.cos.ap-shanghai.myqcloud.com/image/RE2sale/pc/banner_re2sale.jpg)'
+              'background':'url(https://image-1253276483.cos.ap-shanghai.myqcloud.com/image/banner/banner_re2sale.jpg)'
             },
             href:"https://njuesport.club/Sale"
           },
