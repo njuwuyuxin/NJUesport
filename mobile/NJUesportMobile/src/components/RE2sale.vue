@@ -12,7 +12,7 @@
 						<div>非社员价￥195</div>
 					</div>
 		  		</div>
-		  		<a href="https://2.taobao.com/item.htm?spm=2007.1000337.16.4.444e675ev4Xex5&id=586769026316" target="_blank"><img src="https://image-1253276483.cos.ap-shanghai.myqcloud.com/image/RE2sale/pc/cart.png" class="buy"></a>
+		  		<a href="https://market.m.taobao.com/app/idleFish-F2e/widle-taobao-rax/page-detail?wh_weex=true&wx_navbar_transparent=true&id=586769026316&ut_sk=1.V809HBZxr4gDAMla4ZKFC3a%2B_12431167_1548748962283.Copy.detail.586769026316.2630257657&forceFlush=1" target="_blank"><img src="https://image-1253276483.cos.ap-shanghai.myqcloud.com/image/RE2sale/pc/cart.png" class="buy"></a>
 	  		</div> 		
 	  	</div>
 	  	<div class="deluxe">
@@ -25,7 +25,7 @@
 						<div>非社员价￥225</div>
 					</div>
 		  		</div>
-		  		<a href="https://2.taobao.com/item.htm?spm=2007.1000338.6.3.e75d6235I9Tu2F&id=586637493135" target="_blank"><img src="https://image-1253276483.cos.ap-shanghai.myqcloud.com/image/RE2sale/pc/cart.png"class="buy"></a>
+		  		<a href="https://market.m.taobao.com/app/idleFish-F2e/widle-taobao-rax/page-detail?wh_weex=true&wx_navbar_transparent=true&id=586637493135&ut_sk=1.V809HBZxr4gDAMla4ZKFC3a%2B_12431167_1548748962283.Copy.detail.586637493135.2630257657&forceFlush=1" target="_blank"><img src="https://image-1253276483.cos.ap-shanghai.myqcloud.com/image/RE2sale/pc/cart.png"class="buy"></a>
 		  	</div>
 	  	</div>
   	</div>
