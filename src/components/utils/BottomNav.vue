@@ -16,7 +16,8 @@
           	<span class="copyright">COPYRIGHT © NJUESPORT ALL RIGHTS RESERVED</span>
           	<span class="sg">&nbsp;|&nbsp;</span>
           	<span class="address">
-          		<a href="http://www.miitbeian.gov.cn/" class="copymail" target="_blank">苏ICP备18055040号</a>
+          		<a href="http://beian.miit.gov.cn" class="copymail" target="_blank">苏ICP备18055040号-1
+</a>
           	</span>
           	</font>
 	    </div>
