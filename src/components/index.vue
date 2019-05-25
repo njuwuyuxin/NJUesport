@@ -29,7 +29,7 @@ export default {
       	date:"2019年6月待定",
       	class:"游戏沙龙",
       	coverPic:"https://image-1253276483.cos.ap-shanghai.myqcloud.com/image/card/salontemp.jpg",
-      	href:"",
+      	href:"#",
         id:"1"
       },
       {
