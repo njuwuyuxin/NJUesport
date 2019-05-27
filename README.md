@@ -1,4 +1,4 @@
-# nju_esport
+# NJU_ESPORT
 
 > 南大电竞社官网
 
@@ -57,7 +57,7 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
       	title:"游戏沙龙第二期",
       	date:"2018年10月13日",
       	class:"游戏沙龙",
-      	coverPic:"xxxx,
+      	coverPic:"xxxx",
       	href:"xxxxx",
 	id:"xxxx"    //该条新闻的唯一id，不可重复，内容没有限制，建议语义化标签
 }
