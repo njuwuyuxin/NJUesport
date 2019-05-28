@@ -46,19 +46,19 @@ export default {
       let that = this
       setTimeout(function () {
         that.someList = [
-          // {
-          //   html: '',
-          //   style: {
-          //     'background':'url(https://image-1253276483.cos.ap-shanghai.myqcloud.com/image/banner/banner_re2sale.jpg)'
-          //   },
-          //   href:"https://njuesport.club/Sale"
-          // },
+          {
+            html: '',
+            style: {
+            	'background':'url(https://image-1253276483.cos.ap-shanghai.myqcloud.com/image/banner/banner_2019sonkwopai.jpg)'
+            },
+            href:"https://www.sonkwo.com/operation_activities_part/1557027424.html?rcode=cbfcf0c1c4"
+          },
           {
             html: '',
             style: {
             	'background':'url(https://image-1253276483.cos.ap-shanghai.myqcloud.com/image/banner/banner_salon20181216.jpg)'
             },
-            href:"https://njuesport.club/GameSalon3rd"
+            href:"https://www.njuesport.club/GameSalon3rd"
           },
           {
             html: '',
@@ -80,20 +80,6 @@ export default {
             	'background':'url(https://image-1253276483.cos.ap-shanghai.myqcloud.com/image/banner/banner_salon20181013.jpg)'
             },
             href:"https://steamcn.com/t429743-1-1"
-          },
-          {
-            html: '',
-            style: {
-            	'background':'url(https://image-1253276483.cos.ap-shanghai.myqcloud.com/image/banner/banner_2018pubg.jpg)'
-            },
-            href:"https://mp.weixin.qq.com/s/IxfZS0eXrAbSegLDc-294g"
-          },
-          {
-            html: '',
-            style: {
-            	'background':'url(https://image-1253276483.cos.ap-shanghai.myqcloud.com/image/banner/banner_salon20180527.jpg)'
-            },
-            href:"https://steamcn.com/t389636-1-1"
           },
         ]
       }, 2000)
