@@ -4,12 +4,11 @@
       <!-- 配置slider组件 -->
       <slider ref="slider" :options="options" @slide='slide' @tap='onTap' @init='onInit'>
           <!-- 直接使用slideritem slot -->
-          <!-- 对于需要使用路由的链接单独提取出来临时魔改,非长远之计 -->
-          <!-- <slideritem :style="special.style"><router-link to="/Sale" style="display: block;width: 100%;height: 100%;"></router-link></slideritem> -->
-          <slideritem :style="special.style2"><router-link to="/GameSalon3rd" style="display: block;width: 100%;height: 100%;"></router-link></slideritem>
+          <!-- 之后路由地址可以统一写在list里,href填/mobile/xxx相对地址即可 -->
           <slideritem v-for="(item,index) in someList" :key="index" :style="item.style" v-html="item.html"></slideritem>
           <!-- 设置loading,可自定义 -->
-          <div slot="loading" class="loading"><router-link to="/GameSalon3rd" style="display: block;width: 100%;height: 100%;"></router-link></div>
+          <div slot="loading"><a class="loading" href="https://www.sonkwo.com/operation_activities_part/1557027424.html?rcode=cbfcf0c1c4"></a></div>
+          <!-- <div slot="loading" class="loading"><router-link to="/GameSalon3rd" style="display: block;width: 100%;height: 100%;"></router-link></div> -->
       </slider>
 </div>
 </template>
@@ -37,20 +36,6 @@ export default {
           speed: 500,
           addActive:'',
           offsetLeft:'',
-        },
-        special:{
-          style: {
-              'background':'url(https://image-1253276483.cos.ap-shanghai.myqcloud.com/image/banner/banner_re2sale.jpg)',
-              'background-repeat':'no-repeat',
-              'background-size':'140% 100%',
-              'background-position':"top center",
-            },
-          style2: {
-            'background':'url(https://image-1253276483.cos.ap-shanghai.myqcloud.com/image/banner/banner_salon20181216.jpg)',
-            'background-repeat':'no-repeat',
-            'background-size':'140% 100%',
-            'background-position':"top center",
-          },
         }
       }
     },
@@ -62,15 +47,24 @@ export default {
       let that = this
       setTimeout(function () {
         that.someList = [
-          // {
-          //   html: '<router-link to="/GameSalon3rd" style="display:block;width:100vw;height:30vw"></router-link>',
-          //   style: {
-          //     'background':'url(https://image-1253276483.cos.ap-shanghai.myqcloud.com/image/banner/banner_salon20181216.jpg)',
-          //     'background-repeat':'no-repeat',
-          //     'background-size':'140% 100%',
-          //     'background-position':"top center",
-          //   },
-          // },
+          {
+            html: '<a href="https://www.sonkwo.com/operation_activities_part/1557027424.html?rcode=cbfcf0c1c4"  style="display:block;width:100vw;height:30vw"></a>',
+            style: {
+            	'background':'url(https://image-1253276483.cos.ap-shanghai.myqcloud.com/image/banner/banner_2019sonkwopai.jpg)',
+              'background-repeat':'no-repeat',
+              'background-size':'140% 100%',
+              'background-position':"top center",
+            },
+          },
+          {
+            html: '<a href="/mobile/GameSalon3rd" style="display:block;width:100vw;height:30vw"></router-link>',
+            style: {
+              'background':'url(https://image-1253276483.cos.ap-shanghai.myqcloud.com/image/banner/banner_salon20181216.jpg)',
+              'background-repeat':'no-repeat',
+              'background-size':'140% 100%',
+              'background-position':"top center",
+            },
+          },
           {
             html: '<a href="https://mp.weixin.qq.com/s/hWTouIDpLI6FKggTMi6kmA"  style="display:block;width:100vw;height:30vw"></a>',
             style: {
@@ -97,25 +91,7 @@ export default {
               'background-size':'140% 100%',
               'background-position':"top center",
             },
-          },
-          {
-            html: '<a href="https://mp.weixin.qq.com/s/IxfZS0eXrAbSegLDc-294g"  style="display:block;width:100vw;height:30vw"></a>',
-            style: {
-            	'background':'url(https://image-1253276483.cos.ap-shanghai.myqcloud.com/image/banner/banner_2018pubg.jpg)',
-              'background-repeat':'no-repeat',
-              'background-size':'140% 100%',
-              'background-position':"top center",
-            },
-          },
-          {
-            html: '<a href="https://steamcn.com/t389636-1-1" style="display:block;width:100vw;height:30vw"></a>',
-            style: {
-            	'background':'url(https://image-1253276483.cos.ap-shanghai.myqcloud.com/image/banner/banner_salon20180527.jpg)',
-              'background-repeat':'no-repeat',
-              'background-size':'140% 100%',
-              'background-position':"top center",
-            },
-          },
+          }
         ]
       }, 2000)
     },
@@ -138,9 +114,10 @@ export default {
 .loading{
   width: 100vw;
   height: 30vw;
-  background:url(https://image-1253276483.cos.ap-shanghai.myqcloud.com/image/banner/banner_salon20181216.jpg);
+  background:url(https://image-1253276483.cos.ap-shanghai.myqcloud.com/image/banner/banner_2019sonkwopai.jpg);
   background-repeat:no-repeat;
   background-size:140% 100%;
   background-position:top center;
+  display: block;
 }
 </style>
