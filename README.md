@@ -104,3 +104,5 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 template模板中
 <div slot="loading"><a href="图片跳转地址" target="_blank">img src="预载的第一张图片url"></a></div>
 ```
+### 注意事项
+node版本建议使用较新版本 10.x以上，使用旧版本可能会有兼容性问题
