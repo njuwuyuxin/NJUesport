@@ -28,8 +28,8 @@ export default {
 	  	(function(_this){
         _this.$axios
           .get(
-            //"api/activities.php?index="+_this.showIndex,   //dev
-            "/activities.php?index="+_this.showIndex,	//build
+            //"api/api/activities?index="+_this.showIndex,   //dev
+            "https://njuesport.club:8030/api/activities?index="+_this.showIndex,	//build
           )
           .then(function(response) {
           	console.log("response:");
