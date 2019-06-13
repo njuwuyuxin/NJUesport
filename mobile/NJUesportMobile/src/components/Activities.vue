@@ -48,8 +48,10 @@ export default {
             console.log(data);
             if(data.length<10)
             	_this.showAll=true;
-            for(var i=0;i<data.length;i++)
-            	_this.activitiesOnShow.push(data[i]);
+            for(var i=0;i<data.length;i++){
+				data[i].date = data[i].date.slice(0,10);
+				_this.activitiesOnShow.push(data[i]);
+			}
             _this.showIndex+=data.length;
           })
           .catch(function(error) {
