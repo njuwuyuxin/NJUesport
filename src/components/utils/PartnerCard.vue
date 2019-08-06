@@ -1,7 +1,7 @@
 <template>
 	<div class="frame">
 		<div class="partnerCard">
-		    <img class="pic" v-bind:src="PartnerInfo.coverPic">
+		    <a v-bind:href="PartnerInfo.href" target="_blank"><img class="pic" v-bind:src="PartnerInfo.coverPic"></a>
 		    <h2 class="title">{{PartnerInfo.title}}</h2>
 		    <div class="paras" v-for="para in PartnerInfo.content">{{para}}</div>
 		</div>
