@@ -7,7 +7,7 @@
           <slideritem v-for="(item,index) in someList" :key="index" :style="item.style" v-html="item.html"></slideritem>
           <!-- 设置loading,可自定义 -->
           <!-- <div slot="loading">loading...</div> -->
-          <div slot="loading"><a href="https://www.sonkwo.com/operation_activities_part/1557027424.html?rcode=cbfcf0c1c4" target="_blank"><img src="https://image-1253276483.cos.ap-shanghai.myqcloud.com/image/banner/banner_2019sonkwopai.jpg"></a></div>
+          <div slot="loading"><a href="http://bbs.njuesport.club/thread/98.html" target="_blank"><img src="https://image-1253276483.cos.ap-shanghai.myqcloud.com/image/banner/banner_2019xinshengbei.jpg"></a></div>
       </slider>
 </div>
 </template>
@@ -49,38 +49,45 @@ export default {
           {
             html: '',
             style: {
-            	'background':'url(https://image-1253276483.cos.ap-shanghai.myqcloud.com/image/banner/banner_2019sonkwopai.jpg)'
+            	'background':'url(https://image-1253276483.cos.ap-shanghai.myqcloud.com/image/banner/banner_2019xinshengbei.jpg)'
             },
-            href:"https://www.sonkwo.com/operation_activities_part/1557027424.html?rcode=cbfcf0c1c4"
+            href:"http://bbs.njuesport.club/thread/98.html"
           },
-          {
-            html: '',
-            style: {
-            	'background':'url(https://image-1253276483.cos.ap-shanghai.myqcloud.com/image/banner/banner_salon20181216.jpg)'
-            },
-            href:"https://www.njuesport.club/GameSalon3rd"
-          },
-          {
-            html: '',
-            style: {
-            	'background':'url(https://image-1253276483.cos.ap-shanghai.myqcloud.com/image/banner/banner_2018dongzhi.jpg)'
-            },
-            href:"https://mp.weixin.qq.com/s/hWTouIDpLI6FKggTMi6kmA"
-          },
-          {
-            html: '',
-            style: {
-            	'background':'url(https://image-1253276483.cos.ap-shanghai.myqcloud.com/image/banner/banner_2018xinshengbei.jpg)'
-            },
-            href:"https://mp.weixin.qq.com/s/_ARdMvYzXtIQJLOtJJdR2Q"
-          },
-          {
-            html: '',
-            style: {
-            	'background':'url(https://image-1253276483.cos.ap-shanghai.myqcloud.com/image/banner/banner_salon20181013.jpg)'
-            },
-            href:"https://steamcn.com/t429743-1-1"
-          },
+          // {
+          //   html: '',
+          //   style: {
+          //   	'background':'url(https://image-1253276483.cos.ap-shanghai.myqcloud.com/image/banner/banner_2019sonkwopai.jpg)'
+          //   },
+          //   href:"https://www.sonkwo.com/operation_activities_part/1557027424.html?rcode=cbfcf0c1c4"
+          // },
+          // {
+          //   html: '',
+          //   style: {
+          //   	'background':'url(https://image-1253276483.cos.ap-shanghai.myqcloud.com/image/banner/banner_salon20181216.jpg)'
+          //   },
+          //   href:"https://www.njuesport.club/GameSalon3rd"
+          // },
+          // {
+          //   html: '',
+          //   style: {
+          //   	'background':'url(https://image-1253276483.cos.ap-shanghai.myqcloud.com/image/banner/banner_2018dongzhi.jpg)'
+          //   },
+          //   href:"https://mp.weixin.qq.com/s/hWTouIDpLI6FKggTMi6kmA"
+          // },
+          // {
+          //   html: '',
+          //   style: {
+          //   	'background':'url(https://image-1253276483.cos.ap-shanghai.myqcloud.com/image/banner/banner_2018xinshengbei.jpg)'
+          //   },
+          //   href:"https://mp.weixin.qq.com/s/_ARdMvYzXtIQJLOtJJdR2Q"
+          // },
+          // {
+          //   html: '',
+          //   style: {
+          //   	'background':'url(https://image-1253276483.cos.ap-shanghai.myqcloud.com/image/banner/banner_salon20181013.jpg)'
+          //   },
+          //   href:"https://steamcn.com/t429743-1-1"
+          // },
         ]
       }, 2000)
     },

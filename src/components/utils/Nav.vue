@@ -9,6 +9,7 @@
 	  			<li><router-link class="router_css" to="/Activities">社团活动</router-link></li>
 	  			<li><router-link class="router_css" to="/Partner">合作伙伴</router-link></li>
 	  			<li><router-link class="router_css" to="/Contact">联系我们</router-link></li>
+	  			<li><a class="router_css" href="http://bbs.njuesport.club" target="_blank" >论坛</a></li>
 	  		</ul>
   		</div>
   	</div>
@@ -39,7 +40,7 @@ ul{
 li{
 	float:left;
 	height: 40px;
-	margin-left: 20px;
+	margin-left: 5px;
 	font-size:25px;
 	line-height: 40px;
 	font-weight: bold;

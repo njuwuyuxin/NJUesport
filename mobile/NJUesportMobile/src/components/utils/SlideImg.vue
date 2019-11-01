@@ -7,7 +7,7 @@
           <!-- 之后路由地址可以统一写在list里,href填/mobile/xxx相对地址即可 -->
           <slideritem v-for="(item,index) in someList" :key="index" :style="item.style" v-html="item.html"></slideritem>
           <!-- 设置loading,可自定义 -->
-          <div slot="loading"><a class="loading" href="https://www.sonkwo.com/operation_activities_part/1557027424.html?rcode=cbfcf0c1c4"></a></div>
+          <div slot="loading"><a class="loading" href="http://bbs.njuesport.club/thread/98.html"></a></div>
           <!-- <div slot="loading" class="loading"><router-link to="/GameSalon3rd" style="display: block;width: 100%;height: 100%;"></router-link></div> -->
       </slider>
 </div>
@@ -48,50 +48,59 @@ export default {
       setTimeout(function () {
         that.someList = [
           {
-            html: '<a href="https://www.sonkwo.com/operation_activities_part/1557027424.html?rcode=cbfcf0c1c4"  style="display:block;width:100vw;height:30vw"></a>',
+            html: '<a href="http://bbs.njuesport.club/thread/98.html"  style="display:block;width:100vw;height:30vw"></a>',
             style: {
-            	'background':'url(https://image-1253276483.cos.ap-shanghai.myqcloud.com/image/banner/banner_2019sonkwopai.jpg)',
+            	'background':'url(https://image-1253276483.cos.ap-shanghai.myqcloud.com/image/banner/banner_2019xinshengbei.jpg)',
               'background-repeat':'no-repeat',
               'background-size':'140% 100%',
               'background-position':"top center",
             },
           },
-          {
-            html: '<a href="/mobile/GameSalon3rd" style="display:block;width:100vw;height:30vw"></router-link>',
-            style: {
-              'background':'url(https://image-1253276483.cos.ap-shanghai.myqcloud.com/image/banner/banner_salon20181216.jpg)',
-              'background-repeat':'no-repeat',
-              'background-size':'140% 100%',
-              'background-position':"top center",
-            },
-          },
-          {
-            html: '<a href="https://mp.weixin.qq.com/s/hWTouIDpLI6FKggTMi6kmA"  style="display:block;width:100vw;height:30vw"></a>',
-            style: {
-            	'background':'url(https://image-1253276483.cos.ap-shanghai.myqcloud.com/image/banner/banner_2018dongzhi.jpg)',
-              'background-repeat':'no-repeat',
-              'background-size':'140% 100%',
-              'background-position':"top center",
-            },
-          },
-          {
-            html: '<a href="https://mp.weixin.qq.com/s/_ARdMvYzXtIQJLOtJJdR2Q" style="display:block;width:100vw;height:30vw"></a>',
-            style: {
-            	'background':'url(https://image-1253276483.cos.ap-shanghai.myqcloud.com/image/banner/banner_2018xinshengbei.jpg)',
-              'background-repeat':'no-repeat',
-              'background-size':'140% 100%',
-              'background-position':"top center",
-            },
-          },
-          {
-            html: '<a href="https://steamcn.com/t429743-1-1" style="display:block;width:100vw;height:30vw"></a>',
-            style: {
-            	'background':'url(https://image-1253276483.cos.ap-shanghai.myqcloud.com/image/banner/banner_salon20181013.jpg)',
-              'background-repeat':'no-repeat',
-              'background-size':'140% 100%',
-              'background-position':"top center",
-            },
-          }
+          // {
+          //   html: '<a href="https://www.sonkwo.com/operation_activities_part/1557027424.html?rcode=cbfcf0c1c4"  style="display:block;width:100vw;height:30vw"></a>',
+          //   style: {
+          //   	'background':'url(https://image-1253276483.cos.ap-shanghai.myqcloud.com/image/banner/banner_2019sonkwopai.jpg)',
+          //     'background-repeat':'no-repeat',
+          //     'background-size':'140% 100%',
+          //     'background-position':"top center",
+          //   },
+          // },
+          // {
+          //   html: '<a href="/mobile/GameSalon3rd" style="display:block;width:100vw;height:30vw"></router-link>',
+          //   style: {
+          //     'background':'url(https://image-1253276483.cos.ap-shanghai.myqcloud.com/image/banner/banner_salon20181216.jpg)',
+          //     'background-repeat':'no-repeat',
+          //     'background-size':'140% 100%',
+          //     'background-position':"top center",
+          //   },
+          // },
+          // {
+          //   html: '<a href="https://mp.weixin.qq.com/s/hWTouIDpLI6FKggTMi6kmA"  style="display:block;width:100vw;height:30vw"></a>',
+          //   style: {
+          //   	'background':'url(https://image-1253276483.cos.ap-shanghai.myqcloud.com/image/banner/banner_2018dongzhi.jpg)',
+          //     'background-repeat':'no-repeat',
+          //     'background-size':'140% 100%',
+          //     'background-position':"top center",
+          //   },
+          // },
+          // {
+          //   html: '<a href="https://mp.weixin.qq.com/s/_ARdMvYzXtIQJLOtJJdR2Q" style="display:block;width:100vw;height:30vw"></a>',
+          //   style: {
+          //   	'background':'url(https://image-1253276483.cos.ap-shanghai.myqcloud.com/image/banner/banner_2018xinshengbei.jpg)',
+          //     'background-repeat':'no-repeat',
+          //     'background-size':'140% 100%',
+          //     'background-position':"top center",
+          //   },
+          // },
+          // {
+          //   html: '<a href="https://steamcn.com/t429743-1-1" style="display:block;width:100vw;height:30vw"></a>',
+          //   style: {
+          //   	'background':'url(https://image-1253276483.cos.ap-shanghai.myqcloud.com/image/banner/banner_salon20181013.jpg)',
+          //     'background-repeat':'no-repeat',
+          //     'background-size':'140% 100%',
+          //     'background-position':"top center",
+          //   },
+          // }
         ]
       }, 2000)
     },
@@ -114,7 +123,7 @@ export default {
 .loading{
   width: 100vw;
   height: 30vw;
-  background:url(https://image-1253276483.cos.ap-shanghai.myqcloud.com/image/banner/banner_2019sonkwopai.jpg);
+  background:url(https://image-1253276483.cos.ap-shanghai.myqcloud.com/image/banner/banner_2019xinshengbei.jpg);
   background-repeat:no-repeat;
   background-size:140% 100%;
   background-position:top center;
