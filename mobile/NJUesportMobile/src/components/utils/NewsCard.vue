@@ -54,6 +54,9 @@ img{
 	font-size: 11px;
 	text-align: center;
 	color: #63065f;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
 }
 .date{
 	font-size: 8px;
