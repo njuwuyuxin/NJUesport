@@ -9,7 +9,7 @@
 		<li><router-link to="/Activities">社团活动</router-link></li>
 		<li><router-link to="/Partner">合作伙伴</router-link></li>
 		<li><router-link to="/Contact">联系我们</router-link></li>
-		<li><a href="http://bbs.njuesport.club" target="_blank">论坛</a></li>
+		<!-- <li><a href="http://bbs.njuesport.club" target="_blank">论坛</a></li> -->
 	</ul>
   </div>
 </template>
@@ -67,8 +67,10 @@ a{
 .nav-ul{
 	position: relative;
 	left: 50%;
-	width: 352px;
-	margin-left: -176px;
+	/* width: 352px; */
+	/* margin-left: -176px; */
+	width: 310px;
+	margin-left: -155px;
 
 }
 .nav-ul li{

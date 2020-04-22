@@ -13,7 +13,7 @@ https://image-1253276483.cos.ap-shanghai.myqcloud.com/image/logo2/nju.png" class
 	</div>
 	<div class="BeiAn">
 		<div>COPYRIGHT © NJUESPORT ALL RIGHTS RESERVED</div>
-		<div><a href="http://beian.miit.gov.cn" style="color:#7a5678">苏ICP备18055040号-1
+		<div><a href="http://beian.miit.gov.cn" style="color:#7a5678">苏ICP备18055040号-3
 </a></div>
 	</div>
   </div>

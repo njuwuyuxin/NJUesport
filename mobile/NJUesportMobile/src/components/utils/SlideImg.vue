@@ -7,7 +7,7 @@
           <!-- 之后路由地址可以统一写在list里,href填/mobile/xxx相对地址即可 -->
           <slideritem v-for="(item,index) in someList" :key="index" :style="item.style" v-html="item.html"></slideritem>
           <!-- 设置loading,可自定义 -->
-          <div slot="loading"><a class="loading" href="http://bbs.njuesport.club/thread/98.html"></a></div>
+          <div slot="loading"><a class="loading" href="https://bbs.njuesport.club/thread/98.html"></a></div>
           <!-- <div slot="loading" class="loading"><router-link to="/GameSalon3rd" style="display: block;width: 100%;height: 100%;"></router-link></div> -->
       </slider>
 </div>
@@ -48,7 +48,7 @@ export default {
       setTimeout(function () {
         that.someList = [
           {
-            html: '<a href="http://bbs.njuesport.club/thread/98.html"  style="display:block;width:100vw;height:30vw"></a>',
+            html: '<a href="https://bbs.njuesport.club/thread/98.html"  style="display:block;width:100vw;height:30vw"></a>',
             style: {
             	'background':'url(https://image-1253276483.cos.ap-shanghai.myqcloud.com/image/banner/banner_2019xinshengbei.jpg)',
               'background-repeat':'no-repeat',

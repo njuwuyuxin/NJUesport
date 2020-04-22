@@ -9,7 +9,7 @@
 	  			<li><router-link class="router_css" to="/Activities">社团活动</router-link></li>
 	  			<li><router-link class="router_css" to="/Partner">合作伙伴</router-link></li>
 	  			<li><router-link class="router_css" to="/Contact">联系我们</router-link></li>
-	  			<li><a class="router_css" href="http://bbs.njuesport.club" target="_blank" >论坛</a></li>
+	  			<!-- <li><a class="router_css" href="http://bbs.njuesport.club" target="_blank" >论坛</a></li> -->
 	  		</ul>
   		</div>
   	</div>
@@ -74,7 +74,7 @@ li:hover{
 	/*height: 50px;
 	width: 500px;*/
 	margin-top: 40px;
-	margin-left: 265px;
-
+	/* margin-left: 265px; */
+	margin-left: 335px;
 }
 </style>
